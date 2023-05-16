@@ -1,7 +1,9 @@
+import NavBar from "../components/NavBar";
+
 export default function Home() {
   return (
     <section>
-        Olá Mundo
+        <NavBar />
     </section>
   )
 }
