@@ -3,6 +3,7 @@
 <details>
   <summary markdown="span"><strong>🇺🇸 English</strong></summary><br />
 
+<strong>
 This is a personal portfolio project designed to highlight my skills and experiences as [your profession or field of expertise].
 
 Using JavaScript, HTML5, CSS3, React-Bootstrap, this project was created to provide a comprehensive overview of my work and professional achievements.
@@ -14,6 +15,7 @@ You can explore my projects, check my skills and contact me directly through the
 Contributions and feedback are always welcome! If you have any suggestions to improve the portfolio or find any problems, feel free to open an issue.
 
 I hope that my portfolio will be useful to present my work and experience. Thanks for visiting!
+</strong>
 
 [Click here](https://ruanportella.dev/) to check out the final version of the project on your browser.
 <br />
