@@ -1,4 +1,4 @@
-nav.navbar {
+.navbar {
 padding: 18px 0;
 position: fixed;
 overflow-x: hidden;
@@ -7,19 +7,19 @@ transition:  0.32s ease-in-out;
 z-index: 9999;
 }
 
-nav.navbar.scrolled {
+.scrolled {
 padding: 6px 0 0 0;
 background-color: #121212;
 }
 
-nav.navbar a.navbar-brand p {
+.brandLogo {
     font-size: 36px;
     color: white;
     letter-spacing: -0.2rem;
     text-shadow: 0.1em 0.1em 0.030em #333;
 }
 
-nav.navbar .navbar-nav .nav-link.navbar-link {
+.navbar .navbar-nav .nav-link.navbar-link {
 font-weight: 500;
 color: white !important;
 letter-spacing: 0.8px;
@@ -28,8 +28,8 @@ font-size: 18px;
 opacity: 0.75;
 }
 
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+.navbar .navbar-nav a.nav-link.navbar-link:hover,
+.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
 }
 
@@ -76,13 +76,13 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
-nav.navbar .navbar-toggler:active,
-nav.navbar .navbar-toggler:focus {
+.navbar-toggler:active,
+.navbar-toggler:focus {
     outline: none;
     box-shadow: none;
 }
 
-nav.navbar .navbar-toggler-icon {
+.hamburger-icon {
 width: 24px;
 height: 17px;
 background-image: none;
@@ -90,14 +90,17 @@ position: relative;
 border-bottom: 2px solid #fff;
 transition: all 300ms linear;
 top: -2px;
+display: inline-block;
+vertical-align: middle;
+background-size: 100%;
 }
 
-nav.navbar .navbar-toggler-icon:focus {
+.hamburger-icon:focus {
     border-bottom: 2px solid #fff;
 }
 
-nav.navbar .navbar-toggler-icon:after,
-nav.navbar .navbar-toggler-icon:before {
+.hamburger-icon:after,
+.hamburger-icon:before {
     width: 24px;
     position: absolute;
     height: 2px;
@@ -109,23 +112,23 @@ nav.navbar .navbar-toggler-icon:before {
     transition: all 300ms linear;
 }
 
-nav.navbar .navbar-toggler-icon:after {
+.hamburger-icon:after {
     top: 8px;
 }
 
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+.hamburger-x .hamburger-icon:after {
     transform: rotate(45deg);
     background-color: #fff;
     height: 2px;
 }
 
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+.hamburger-x .hamburger-icon:before {
     transform: translateY(8px) rotate(-45deg);
     background-color: #fff;
     height: 2px;
 }
 
-nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+.hamburger-x .hamburger-icon {
     border-color: transparent;
 }
 
@@ -142,7 +145,11 @@ background-color: #121212 !important;
 padding-top: 10vh;
 }
 
-span.navbar-text {
+.offcanvas.offcanvas-end {
+    width: 100vw;
+}
+
+.navbar-text {
     display: flex;
     align-items: center;
 }
