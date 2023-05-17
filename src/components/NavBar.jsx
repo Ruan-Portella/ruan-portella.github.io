@@ -11,6 +11,7 @@ import LanguageContext from "../context/LanguageContext";
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
+  const [isToggler, setIsToggler] = useState(false);
   const {isBR, handleChangeLanguage} = useContext(LanguageContext);
 
 
@@ -29,18 +30,14 @@ export default function NavBar() {
   })
 
 
-  const updateActiveLink = (value) => {
-    setActiveLink(value);
-}
-
   return (
     <Navbar collapseOnSelect expand="lg" className={(scrolled ? "scrolled" : "")}>
       <Container>
         <Navbar.Brand href="/">
-          <p>RP</p>
+          <p className="brandLogo">RP</p>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className={isToggler ? 'hamburger-x' : ''} onClick={() => isToggler ? setIsToggler(false) : setIsToggler(true)}>
+          <span className="hamburger-icon"></span>
         </Navbar.Toggle>
         <Navbar.Offcanvas
                     id={`offcanvasNavbar-expand-lg`}
@@ -54,7 +51,7 @@ export default function NavBar() {
                                     className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
                                     onClick={() => {
                                         setTimeout(() => {
-                                            updateActiveLink('home');
+                                          setActiveLink('home');
                                             window.location.href = '#home';
                                         }, 400);
                                         return false;
@@ -66,7 +63,7 @@ export default function NavBar() {
                                     className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
                                     onClick={() => {
                                         setTimeout(() => {
-                                            updateActiveLink('skills');
+                                          setActiveLink('skills');
                                             window.location.href = '#skills';
                                         }, 400);
                                         return false;
@@ -78,7 +75,7 @@ export default function NavBar() {
                                     className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
                                     onClick={() => {
                                         setTimeout(() => {
-                                            updateActiveLink('projects');
+                                          setActiveLink('projects');
                                             window.location.href = '#projects';
                                         }, 400);
                                         return false;
@@ -90,7 +87,7 @@ export default function NavBar() {
                                     className={activeLink === 'contate-me' ? 'active navbar-link' : 'navbar-link'}
                                     onClick={() => {
                                         setTimeout(() => {
-                                            updateActiveLink('contate-me');
+                                          setActiveLink('contate-me');
                                             window.location.href = '#contate-me';
                                         }, 500);
                                         return false;
