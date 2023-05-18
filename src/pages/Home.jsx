@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import headerImg from '../images/code-typing-animate.svg'
 import LanguageContext from "../context/LanguageContext";
 import { useContext } from "react";
+import '../styles/Home.css'
 
 
 export default function Home() {
