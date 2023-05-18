@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import LanguageContext from "../context/LanguageContext";
 import { useEffect } from 'react';
 import { useContext } from 'react';
+import '../styles/Projects.css'
 
 export function Projects() {
     const {isBR} = useContext(LanguageContext);

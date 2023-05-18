@@ -7,6 +7,7 @@ import LanguageContext from "../context/LanguageContext";
 import { useContext } from "react";
 import '../styles/Home.css'
 import { Skills } from "./Skills";
+import { Projects } from "./Projects";
 
 
 export default function Home() {
@@ -60,6 +61,7 @@ export default function Home() {
             </p>
         </section>
         <Skills />
+        <Projects />
     </section>
   )
 }

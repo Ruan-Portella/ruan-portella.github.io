@@ -1,8 +1,8 @@
-import projImg1 from '../assets/images/project-img4.png'
-import projImg2 from '../assets/images/project-img2.png'
-import projImg3 from '../assets/images/project-img1.png'
-import projImg4 from '../assets/images/project-img5.png'
-import projImg5 from '../assets/images/project-img3.png'
+import projImg1 from '../images/project-img4.png'
+import projImg2 from '../images/project-img2.png'
+import projImg3 from '../images/project-img1.png'
+import projImg4 from '../images/project-img5.png'
+import projImg5 from '../images/project-img3.png'
 import { FaReact, FaHtml5, FaCss3Alt } from 'react-icons/fa'
 import {SiJavascript, SiReactrouter, SiRedux} from 'react-icons/si'
 
