@@ -30,6 +30,10 @@
     width: 24%;
   }
 
+.tab-content {
+  margin-bottom: 20px;
+}
+
 .skill-content .nav.nav-pills .nav-link {
     background-color: transparent;
     border-radius: 0;
