@@ -1,0 +1,122 @@
+.proj-imgbx {
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+
+.proj-imgbx::before {
+    content: "";
+    background: linear-gradient(90.21deg, #171717 -5.91%, #565657 111.58%);
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.proj-imgbx:hover::before {
+    height: 100%;
+}
+
+.proj-txtx {
+    position: absolute;
+    text-align: center;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%;
+}
+
+
+.proj-txtx button {
+    margin: 1px;
+    margin-top: 10px;
+    font-size: 1px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background-color: #171717;
+    border-style: solid;
+    border-color: #222;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
+    text-shadow: -1px -1px 0 #3f3f3f, -1px 0 0 #3f3f3f, -1px 1px 0 #3f3f3f, 0 -1px 0 #3f3f3f, 0 0 0 #3f3f3f, 0 1px 0 #3f3f3f, 1px -1px 0 #3f3f3f, 1px 0 0 #3f3f3f, 1px 1px 0 #3f3f3f;
+}
+
+.proj-txtx button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.proj-imgbx:hover .proj-txtx {
+    top: 50%;
+    opacity: 1;
+}
+
+.proj-imgbx:hover .proj-txtx button {
+    display: inline;
+    font-size: 13px;
+}
+
+.proj-imgbx:hover .proj-txtx a {
+    display: inline;
+}
+
+.proj-txtx h4 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+}
+
+.proj-span {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.proj-span ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0;
+}
+
+.proj-span li {
+    list-style: none;
+    margin: 1px;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background-color: #313131;
+    color: #999;
+    border-style: solid;
+    border-color: #222;
+    border-radius: 3px;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
+    text-shadow: -1px -1px 0 #3f3f3f, -1px 0 0 #3f3f3f, -1px 1px 0 #3f3f3f, 0 -1px 0 #3f3f3f, 0 0 0 #3f3f3f, 0 1px 0 #3f3f3f, 1px -1px 0 #3f3f3f, 1px 0 0 #3f3f3f, 1px 1px 0 #3f3f3f;
+}
+
+.projectDetailContainer {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .project img {
+        width: 100%;
+        height: 50vw; 
+    }
+}
+
+@media only screen and (max-width: 430px) {
+
+    .project img {
+        width: 100%;
+        height: 250px;
+    }
+}
