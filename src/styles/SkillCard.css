@@ -1,0 +1,13 @@
+.carousel-caption {
+    position: relative !important;
+    overflow-x: hidden;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .carousel-indicators {
+    margin-bottom: -3rem !important;
+  }
