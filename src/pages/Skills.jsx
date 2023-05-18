@@ -1,7 +1,10 @@
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
+import { SkillsCards } from '../components/SkillsCards';
+import { SkillData } from '../utils/skillData';
 import { motion } from 'framer-motion';
 import { useContext } from "react";
 import LanguageContext from "../context/LanguageContext";
+import '../styles/Skill.css'
 
 export function Skills() {
     const {isBR} = useContext(LanguageContext);
@@ -37,6 +40,18 @@ export function Skills() {
                                     </Nav.Item>
                                 </Nav>
                                 <Tab.Content id="slideInUpSkill">
+                                    <Tab.Pane eventKey="front">
+                                        <SkillsCards {...SkillData[0]}></SkillsCards>
+                                    </Tab.Pane>
+                                    {/* <Tab.Pane eventKey="back">
+                                        <SkillsCards {...SkillData[1]}></SkillsCards>
+                                    </Tab.Pane> */}
+                                    <Tab.Pane eventKey="test">
+                                        <SkillsCards {...SkillData[2]}></SkillsCards>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="outros">
+                                        <SkillsCards {...SkillData[3]}></SkillsCards>
+                                    </Tab.Pane>
                                 </Tab.Content>
                             </Tab.Container>
                             </motion.div>

@@ -1,5 +1,7 @@
 import { Carousel } from 'react-bootstrap'
 import { responsive } from '../utils/responsiveData'
+import '../styles/SkillCard.css'
+
 
 export function SkillsCards(skill) {
   return (
