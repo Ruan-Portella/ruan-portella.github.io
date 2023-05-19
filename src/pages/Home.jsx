@@ -9,6 +9,7 @@ import '../styles/Home.css'
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
+import { Footer } from "../components/Footer";
 
 
 export default function Home() {
@@ -64,6 +65,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Contact />
+        <Footer />
     </section>
   )
 }
