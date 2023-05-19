@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <section>
-        <NavBar />
+        <NavBar/>
         <section className="banner" id="home">
             <section className="bannerContent">
                 <Container>

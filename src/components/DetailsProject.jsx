@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import { projects } from '../utils/projectData';
-import { FaArrowLeft, FaExternalLinkAlt } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 import '../styles/DetailsProject.css'
 import { motion } from 'framer-motion'
 import LanguageContext from '../context/LanguageContext';
 import { useContext } from 'react';
 import { SiGithub } from 'react-icons/si';
+import { Footer } from './Footer';
+import NavBar from './NavBar';
 
 
 
@@ -27,8 +28,9 @@ export default function DetailsProject() {
     }, [project])
 
     return (
+        <section>
+        <NavBar details={true}/>
         <motion.div>
-            <motion.div className='projectLink'><Link to='/#projects' className='LinkProject'><span><FaArrowLeft size={40} /></span></Link></motion.div>
         <motion.section initial='initial' animate='animate' exit='exit' className='projectDetails'>
             <Container>
                 {
@@ -44,7 +46,7 @@ export default function DetailsProject() {
                                         </div>
                                     </motion.div>
                                     <motion.div className='imgCenter'>
-                                        <motion.img initial={{width: '10%', x: '-70%',}} animate={{width: '100%', x: '0%', transition: {delay: 0.1, ...transition}}} src={proj.imgUrl}></motion.img>
+                                        <motion.img initial={{width: '0%', x: '-70%',}} animate={{width: '100%', x: '0%', transition: {delay: 0.1, ...transition}}} src={proj.imgUrl}></motion.img>
                                     </motion.div>
                                     <motion.h3 initial={{y: '800'}} animate={{y: 0, transition: {delay: 0.2, ...transition}}}>{isBR ? 'Sobre o Projeto' : 'About The Project'}</motion.h3>
                                     <motion.p initial={{x: '2000'}} animate={{x: 0, transition: {delay: 0.2, ...transition}}}>{isBR ? proj.description : proj.descriptionEn}</motion.p>
@@ -69,5 +71,7 @@ export default function DetailsProject() {
             </Container>
         </motion.section>
         </motion.div>
+        <Footer />
+        </section>
     )
 }
