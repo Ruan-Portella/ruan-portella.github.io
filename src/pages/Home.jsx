@@ -8,6 +8,7 @@ import { useContext } from "react";
 import '../styles/Home.css'
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
+import { Contact } from "./Contact";
 
 
 export default function Home() {
@@ -62,6 +63,7 @@ export default function Home() {
         </section>
         <Skills />
         <Projects />
+        <Contact />
     </section>
   )
 }
