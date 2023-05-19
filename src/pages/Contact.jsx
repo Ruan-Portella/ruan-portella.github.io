@@ -4,7 +4,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import ToastContainer from 'react-bootstrap/ToastContainer';
 import Toast from 'react-bootstrap/Toast';
 import { motion } from 'framer-motion';
-// import '../styles/Contact.css'
+import '../styles/Contact.css'
 import { useContext } from 'react';
 import LanguageContext from '../context/LanguageContext';
 
