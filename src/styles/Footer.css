@@ -1,0 +1,7 @@
+.footer-content {
+    display: flex !important;
+    justify-content: center;
+    overflow-x: hidden;
+    align-items: center !important;
+    text-align: center;
+}
