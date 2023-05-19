@@ -6,6 +6,8 @@ import headerImg from '../images/code-typing-animate.svg'
 import LanguageContext from "../context/LanguageContext";
 import { useContext } from "react";
 import '../styles/Home.css'
+import { Skills } from "./Skills";
+import { Projects } from "./Projects";
 
 
 export default function Home() {
@@ -58,6 +60,8 @@ export default function Home() {
                 <a href='#skills' className='ArrowCircle' ><BsArrowDownCircle size={40} /></a>
             </p>
         </section>
+        <Skills />
+        <Projects />
     </section>
   )
 }
