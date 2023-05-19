@@ -1,0 +1,137 @@
+.projectDetails {
+    width: 100vw;
+    padding-top: 20vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    flex-direction: column;
+}
+
+.projectDetailContainer {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.projectDetails .row {
+    display: flex;
+    justify-content: center;
+}
+
+.projectDetails .row .col-md-5.col-sm-6 p {
+    display: flex;
+    flex-direction: row;
+}
+
+.projectDetails .row .col-md-5.col-sm-6 button {
+    font-weight: 700;
+    background-color: #fff;
+    padding: 14px 28px;
+    font-size: 18px;
+    margin-top: 25px;
+    border-radius: 0;
+    position: relative;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.projectDetails .row .col-md-5.col-sm-6 button a {
+    z-index: 1;
+    position: relative;
+    text-decoration: none;
+    color: #121212;
+}
+
+.projectDetails .row .col-md-5.col-sm-6 button:hover a {
+    color: white;
+}
+
+.projectDetails .row .col-md-5.col-sm-6 button a::before,
+.projectDetails .row .col-md-5.col-sm-6 button::before {
+    content: "";
+    background: #121212;
+    color: #fff;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.projectDetails .row .col-md-5.col-sm-6 button:hover::before {
+    width: 100%;
+}
+
+.projectDetails .row .col-md-5.col-sm-6 h3 {
+    margin-top: 20px;
+}
+
+.imgCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.TitleIcon {
+    display: flex;
+    gap: 10px;
+}
+
+.project-icon {
+    display: flex;
+}
+
+.project-icon a {
+    width: 35px;
+    height: 35px;
+    background: rgba(217, 217, 217, 0.1);
+    display: inline-flex;
+    border-radius: 50%;
+    margin-right: 6px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.project-icon a::before  {
+    content: "";
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+}
+
+.project-icon a:hover::before {
+    transform: scale(1);
+}
+
+.project-icon a .image  {
+    width: 65%;
+    color: #fff;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.project-icon a:hover .image {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+@media only screen and (max-height: 720px) {
+
+    .projectLink {
+        margin-bottom: 20px;
+    }
+
+    .projectDetails {
+        height: 100%;
+    }
+    
+}
