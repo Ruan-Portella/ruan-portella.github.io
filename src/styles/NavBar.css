@@ -47,7 +47,7 @@ opacity: 0.75;
     align-items: center;
     justify-content: center;
     line-height: 1;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid #ffffff80;
 }
 
 .social-icon a::before, .buttonFlag::before {

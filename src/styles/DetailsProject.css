@@ -1,7 +1,6 @@
 .projectDetails {
     width: 100vw;
-    padding-top: 20vh;
-    margin-bottom: 10vh;
+    margin-bottom: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +12,12 @@
     height: inherit;
     display: flex;
     align-items: center;
+}
+
+.col-project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px !important;
 }
 
 .projectDetails .row {
@@ -74,6 +79,21 @@
 .imgCenter {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+    height: 40vh;
+}
+
+.imgCenter h2 {
+    position: absolute;
+    z-index: 1000;
+}
+
+.imgCenter img {
+    width: 100% !important;
+    height: 100%;
+    position: relative;
+    opacity: 0.5;
 }
 
 .TitleIcon {
@@ -81,8 +101,14 @@
     gap: 10px;
 }
 
-.project-icon {
+.project-info {
     display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.project-description {
+    width: 80%;
 }
 
 .project-icon a {

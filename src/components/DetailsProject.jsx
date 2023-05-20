@@ -24,34 +24,35 @@ export default function DetailsProject() {
         if (project.length <= 0) {
             const Project = projects.filter((project) => project.id === id)
             setProject(Project);
+            window.scrollTo(0, 0)
         }
     }, [project])
 
     return (
         <section>
         <NavBar details={true}/>
-        <motion.div>
+        <motion.div className='container-project'>
         <motion.section initial='initial' animate='animate' exit='exit' className='projectDetails'>
             <Container>
                 {
                     project.map((proj) => (
                         <Container className='projectDetailContainer' key={proj.title}>
                             <Row>
-                                <Col sm={6} md={5}>
-                                    <motion.div initial={{y: '-600'}} animate={{y: 0, transition: {delay: 0.2, ...transition}}} className='TitleIcon'>
-                                    <motion.h2>{proj.title}</motion.h2>
+                                <Col className='col-project'>
+                                    <motion.div className='imgCenter'  initial={{width: '0%', x: '-20%',}} animate={{width: '100%', x: '0%', transition: {delay: 0.1, ...transition}}} >
+                                        <motion.h2>{proj.title}</motion.h2>
+                                        <motion.img src={proj.imgUrl}></motion.img>
+                                    </motion.div>
+                                    <motion.div className='project-info' initial={{y: '-600'}} animate={{y: 0, transition: {delay: 0.2, ...transition}}}>
+                                    <motion.h3>{isBR ? 'Sobre o Projeto' : 'About The Project'}</motion.h3>
                                         <div className="project-icon">
                                             <a href={proj.link} target='_blank' rel="noreferrer"><SiGithub className="image" /></a>
                                             <a href={proj.link}  target='_blank' rel="noreferrer"><FaExternalLinkAlt className="image" /></a>
                                         </div>
                                     </motion.div>
-                                    <motion.div className='imgCenter'>
-                                        <motion.img initial={{width: '0%', x: '-70%',}} animate={{width: '100%', x: '0%', transition: {delay: 0.1, ...transition}}} src={proj.imgUrl}></motion.img>
-                                    </motion.div>
-                                    <motion.h3 initial={{y: '800'}} animate={{y: 0, transition: {delay: 0.2, ...transition}}}>{isBR ? 'Sobre o Projeto' : 'About The Project'}</motion.h3>
-                                    <motion.p initial={{x: '2000'}} animate={{x: 0, transition: {delay: 0.2, ...transition}}}>{isBR ? proj.description : proj.descriptionEn}</motion.p>
+                                    <motion.p className='project-description' initial={{x: '2000'}} animate={{x: 0, transition: {delay: 0.2, ...transition}}}>{isBR ? proj.description : proj.descriptionEn}</motion.p>
                                     <motion.h3 initial={{x: '-2000'}} animate={{x: 0, transition: {delay: 0.2, ...transition}}}>{isBR ? 'Tecnologias' : 'Technologies'}</motion.h3>
-                                    <motion.ul initial={{y: '800'}} animate={{y: 0, transition: {delay: 0.2, ...transition}}}>
+                                    <motion.ul initial={{y: '2000'}} animate={{y: 0, transition: {delay: 0.2, ...transition}}}>
                                         {
                                             proj.stacks.map((stack, index) =>
                                                 <li key={index}>
@@ -71,7 +72,9 @@ export default function DetailsProject() {
             </Container>
         </motion.section>
         </motion.div>
+        <motion.div initial={{x: '-2000', width: '0%'}} animate={{x: 0, width: '100%', transition: {delay: 0.2, ...transition}}}>
         <Footer />
+        </motion.div>
         </section>
     )
 }
