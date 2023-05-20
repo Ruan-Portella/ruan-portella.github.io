@@ -27,7 +27,7 @@ export const Contact = () => {
     const [validate, setValidate] = useState(intialStateValidate);
     const [show, setShow] = useState(true);
 
-    const { isBR } = useContext(PageContext);
+    const { isBR, isDark } = useContext(PageContext);
 
 
 
@@ -175,7 +175,7 @@ export const Contact = () => {
                                             </ToastContainer>)
                                     }
                                 </div>
-                                <Button className='buttonSend' variant='dark' type="submit"><span>{isBR ? 'Mande sua Mensagem ' : 'Send Your Message'}</span></Button>
+                                <Button className={`buttonSend ${isDark ? '' : 'buttonSendLight'}`}  variant='dark' type="submit"><span>{isBR ? 'Mande sua Mensagem ' : 'Send Your Message'}</span></Button>
                             </Form>
                         </Col>
                     </Row>

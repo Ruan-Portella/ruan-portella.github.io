@@ -7,14 +7,14 @@ import PageContext from "../context/PageContext";
 import '../styles/Skill.css'
 
 export function Skills() {
-    const {isBR} = useContext(PageContext);
+    const {isBR, isDark} = useContext(PageContext);
 
     return (
         <section className="skill" id="skills">
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-content">
+                        <div className={`skill-content ${isDark ? '' : 'light_secondary'}`}>
                         <motion.div 
                       whileInView={{ opacity: 1, x: 0, rotate: 0 }}
                       initial={{ opacity: 0, x: -200, rotate: 0 }}

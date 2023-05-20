@@ -15,9 +15,13 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Roboto', sans-serif !important;
+  background-color: #121212 !important;
+}
+
+.App {
+  transition:  0.45s ease-in-out;
 }
 
 body::-webkit-scrollbar {
@@ -56,6 +60,16 @@ img {
 .image {
   width: 100%;
   height: auto;
+}
+
+.light {
+  background-color: #2F4F4F !important;
+  transition:  0.15s ease-in-out;
+}
+
+.light_secondary {
+  background-color: #243F3F !important;
+  transition:  0.15s ease-in-out;
 }
 
 button {

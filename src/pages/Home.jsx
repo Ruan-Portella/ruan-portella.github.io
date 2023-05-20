@@ -13,10 +13,10 @@ import { Footer } from "../components/Footer";
 
 
 export default function Home() {
-  const {isBR} = useContext(PageContext);
+  const {isBR, isDark} = useContext(PageContext);
 
   return (
-    <section>
+    <section className={isDark ? '' : 'light'}>
         <NavBar/>
         <section className="banner" id="home">
             <section className="bannerContent">

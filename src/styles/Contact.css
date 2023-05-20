@@ -95,6 +95,11 @@
     z-index: 0;
     transition: 0.3s ease-in-out;
   }
+
+  .buttonSendLight::before {
+    background: #243F3F !important;
+  }
+  
   .contact form .buttonSend:hover::before {
     width: 100%;
   }

@@ -7,7 +7,7 @@ import { useContext } from 'react';
 import {motion} from 'framer-motion'
 
 export const ProjectCards = ({ title, imgUrl, stacks, id }) => {
-  const {isBR} = useContext(PageContext);
+  const {isBR, isDark} = useContext(PageContext);
   const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 
@@ -21,12 +21,12 @@ export const ProjectCards = ({ title, imgUrl, stacks, id }) => {
             <ul>
               {
                 stacks.map((stack) => (
-                  <li key={stack.name}>{stack.image} <span>{stack.name}</span></li>
+                  <li key={stack.name} className={isDark ? '' : 'light'}>{stack.image}<span>{stack.name}</span></li>
                 ))
               }
             </ul>
           </section>
-          <button><Link to={`/details/${id}`}>{isBR ? 'Conheça o projeto' : 'Know the project'}</Link></button>
+          <button className={isDark ? '' : 'light_secondary'}><Link to={`/details/${id}`}>{isBR ? 'Conheça o projeto' : 'Know the project'}</Link></button>
         </motion.div>
       </div>
     </Col>

@@ -3,6 +3,7 @@ import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
 import { SiGithub } from 'react-icons/si';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { US, BR } from 'country-flag-icons/react/3x2'
+import {CiLight, CiDark} from 'react-icons/ci'
 import { useContext } from "react";
 import '../styles/NavBar.css'
 import PageContext from "../context/PageContext";
@@ -12,7 +13,7 @@ export default function NavBar(details) {
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
   const [isToggler, setIsToggler] = useState(false);
-  const {isBR, handleChangeLanguage} = useContext(PageContext);
+  const {isBR, handleChangeLanguage, isDark, handleChangeColor} = useContext(PageContext);
 
 
   useEffect(() => {
@@ -29,9 +30,14 @@ export default function NavBar(details) {
     return () => window.removeEventListener('scroll', onScroll)
   })
 
+  useEffect(() => {
+    document.body.classList.toggle('light', !isDark);
+  }, [isDark]);
+
+
 
   return (
-    <Navbar collapseOnSelect expand="lg" className={(scrolled ? "scrolled" : "")}>
+    <Navbar collapseOnSelect expand="lg" className={`${scrolled ? "scrolled " : ""}${isDark ? '' : 'nav_light'}`}>
       <Container>
         <Navbar.Brand href="/">
           <p className="brandLogo">RP</p>
@@ -112,7 +118,13 @@ export default function NavBar(details) {
                                         <button className="buttonFlag" onClick={() => handleChangeLanguage(true)}><BR className="image" /></button>
                                       )
                                     }
-
+                                    {
+                                      isDark ? (
+                                        <button className="buttonColor" onClick={() => handleChangeColor(false)} ><CiLight className="image" /></button>
+                                      ) : (
+                                        <button className="buttonColor" onClick={() => handleChangeColor(true)}><CiDark className="image" /></button>
+                                      )
+                                    }
                                 </div>
                             </span>
                             </>
