@@ -3,11 +3,11 @@ import { SkillsCards } from '../components/SkillsCards';
 import { SkillData } from '../utils/skillData';
 import { motion } from 'framer-motion';
 import { useContext } from "react";
-import LanguageContext from "../context/LanguageContext";
+import PageContext from "../context/PageContext";
 import '../styles/Skill.css'
 
 export function Skills() {
-    const {isBR} = useContext(LanguageContext);
+    const {isBR} = useContext(PageContext);
 
     return (
         <section className="skill" id="skills">

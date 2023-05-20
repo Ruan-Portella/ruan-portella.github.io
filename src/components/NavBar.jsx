@@ -5,14 +5,14 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { US, BR } from 'country-flag-icons/react/3x2'
 import { useContext } from "react";
 import '../styles/NavBar.css'
-import LanguageContext from "../context/LanguageContext";
+import PageContext from "../context/PageContext";
 
 
 export default function NavBar(details) {
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState('home');
   const [isToggler, setIsToggler] = useState(false);
-  const {isBR, handleChangeLanguage} = useContext(LanguageContext);
+  const {isBR, handleChangeLanguage} = useContext(PageContext);
 
 
   useEffect(() => {
@@ -98,15 +98,21 @@ export default function NavBar(details) {
                                         return false;
                                     }}
                                 >
-                                    {isBR ? 'Contate-me' : 'Contact'}
+                                    {isBR ? 'Contate-me' : 'Contact Me'}
                                 </Nav.Link>
                                 </Nav>
                             <span className="navbar-text">
                                 <div className="social-icon">
                                     <a href="https://github.com/Ruan-Portella" target='_blank' rel="noreferrer"><SiGithub className="image" /></a>
                                     <a href="https://www.linkedin.com/in/ruanportella/" target='_blank' rel="noreferrer"><FaLinkedinIn className="image" /></a>
-                                    <button className="buttonFlag" onClick={() => handleChangeLanguage(true)}><BR className="image" /></button>
-                                    <button className="buttonFlag" onClick={() => handleChangeLanguage(false)}><US className="image" /></button>
+                                    {
+                                      isBR ? (
+                                        <button className="buttonFlag" onClick={() => handleChangeLanguage(false)}><US className="image" /></button>
+                                      ) : (
+                                        <button className="buttonFlag" onClick={() => handleChangeLanguage(true)}><BR className="image" /></button>
+                                      )
+                                    }
+
                                 </div>
                             </span>
                             </>

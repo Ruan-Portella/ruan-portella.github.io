@@ -6,7 +6,7 @@ import Toast from 'react-bootstrap/Toast';
 import { motion } from 'framer-motion';
 import '../styles/Contact.css'
 import { useContext } from 'react';
-import LanguageContext from '../context/LanguageContext';
+import PageContext from '../context/PageContext';
 
 export const Contact = () => {
     const intialState = {
@@ -27,7 +27,7 @@ export const Contact = () => {
     const [validate, setValidate] = useState(intialStateValidate);
     const [show, setShow] = useState(true);
 
-    const { isBR } = useContext(LanguageContext);
+    const { isBR } = useContext(PageContext);
 
 
 
@@ -80,6 +80,7 @@ export const Contact = () => {
                     viewport={{ once: false }}>
                     <Row className='contact-form'>
                         <Col sm={8}>
+                            <motion.h2>{isBR ? 'Contate-me' : 'Contact Me'}</motion.h2>
                             <Form noValidate validated={validatedForm} onSubmit={handleSubmit} action="https://formsubmit.co/ruanmorales29@gmail.com" method="POST">
                                 <Row className="mb-3">
                                     <Form.Group sm="4" controlId="validationCustom10">

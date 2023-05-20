@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { BsArrowDownCircle } from 'react-icons/bs'
 import { motion } from 'framer-motion';
 import headerImg from '../images/code-typing-animate.svg'
-import LanguageContext from "../context/LanguageContext";
+import PageContext from "../context/PageContext";
 import { useContext } from "react";
 import '../styles/Home.css'
 import { Skills } from "./Skills";
@@ -13,7 +13,7 @@ import { Footer } from "../components/Footer";
 
 
 export default function Home() {
-  const {isBR} = useContext(LanguageContext);
+  const {isBR} = useContext(PageContext);
 
   return (
     <section>

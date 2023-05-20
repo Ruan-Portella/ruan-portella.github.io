@@ -2,12 +2,12 @@ import { Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 import '../styles/ProjectsCard.css'
-import LanguageContext from "../context/LanguageContext";
+import PageContext from "../context/PageContext";
 import { useContext } from 'react';
 import {motion} from 'framer-motion'
 
 export const ProjectCards = ({ title, imgUrl, stacks, id }) => {
-  const {isBR} = useContext(LanguageContext);
+  const {isBR} = useContext(PageContext);
   const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 

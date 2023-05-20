@@ -2,13 +2,13 @@ import { Col, Container, Nav, Row, Tab } from 'react-bootstrap'
 import { projects } from '../utils/projectData';
 import { ProjectCards } from '../components/ProjectsCard'
 import { motion } from 'framer-motion';
-import LanguageContext from "../context/LanguageContext";
+import PageContext from "../context/PageContext";
 import { useEffect } from 'react';
 import { useContext } from 'react';
 import '../styles/Projects.css'
 
 export function Projects() {
-    const {isBR} = useContext(LanguageContext);
+    const {isBR} = useContext(PageContext);
   const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 
 

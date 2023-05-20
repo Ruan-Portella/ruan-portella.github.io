@@ -4,7 +4,7 @@ import { projects } from '../utils/projectData';
 import { FaExternalLinkAlt } from 'react-icons/fa'
 import '../styles/DetailsProject.css'
 import { motion } from 'framer-motion'
-import LanguageContext from '../context/LanguageContext';
+import PageContext from '../context/PageContext';
 import { useContext } from 'react';
 import { SiGithub } from 'react-icons/si';
 import { Footer } from './Footer';
@@ -13,7 +13,7 @@ import NavBar from './NavBar';
 
 
 export default function DetailsProject() {
-    const {isBR} = useContext(LanguageContext);
+    const {isBR} = useContext(PageContext);
     const [project, setProject] = useState([])
     const transition = { duration: 1.4, ease: [0.6, 0.01, -0.05, 0.9] };
 

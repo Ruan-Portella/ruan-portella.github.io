@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { Container, Row } from "react-bootstrap";
-import LanguageContext from "../context/LanguageContext";
+import PageContext from "../context/PageContext";
 import '../styles/Footer.css'
 
 export const Footer = () => {
-  const {isBR} = useContext(LanguageContext);
+  const {isBR} = useContext(PageContext);
 
   return (
     <footer className="footer">
