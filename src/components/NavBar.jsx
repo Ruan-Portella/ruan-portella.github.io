@@ -37,7 +37,7 @@ export default function NavBar(details) {
 
 
   return (
-    <Navbar collapseOnSelect expand="lg" className={`${scrolled ? "scrolled " : ""}${isDark ? '' : 'nav_light'}`}>
+    <Navbar collapseOnSelect expand="lg" className={`${scrolled ? "scrolled " : ""}${isDark ? 'nav_dark' : 'nav_light'}`}>
       <Container>
         <Navbar.Brand href="/">
           <p className="brandLogo">RP</p>

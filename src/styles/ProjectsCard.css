@@ -36,20 +36,17 @@
     margin-top: 10px;
     font-size: 1px;
     padding: 4px 10px;
+    display: none;
     border-radius: 10px;
     background-color: #171717;
     border-style: solid;
     border-color: #222;
+    text-decoration: none;
+    color: white;
     border-radius: 3px;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, .25);
     text-shadow: -1px -1px 0 #3f3f3f, -1px 0 0 #3f3f3f, -1px 1px 0 #3f3f3f, 0 -1px 0 #3f3f3f, 0 0 0 #3f3f3f, 0 1px 0 #3f3f3f, 1px -1px 0 #3f3f3f, 1px 0 0 #3f3f3f, 1px 1px 0 #3f3f3f;
 }
-
-.proj-txtx button a {
-    text-decoration: none;
-    color: white;
-}
-
 
 .proj-imgbx:hover .proj-txtx {
     top: 50%;
@@ -59,10 +56,6 @@
 .proj-imgbx:hover .proj-txtx button {
     display: inline;
     font-size: 13px;
-}
-
-.proj-imgbx:hover .proj-txtx a {
-    display: inline;
 }
 
 .proj-txtx h4 {
