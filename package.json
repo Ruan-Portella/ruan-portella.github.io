@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@djpfs/react-vlibras": "^2.0.2",
     "bootstrap": "^5.2.3",
     "country-flag-icons": "^1.5.7",
     "framer-motion": "^10.12.12",

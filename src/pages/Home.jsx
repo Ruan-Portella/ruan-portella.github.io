@@ -9,6 +9,7 @@ import '../styles/Home.css'
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
+import VLibras from '@djpfs/react-vlibras';
 import { Footer } from "../components/Footer";
 
 
@@ -68,6 +69,7 @@ export default function Home() {
         <Projects />
         <Contact />
         <Footer />
+        <VLibras />
     </section>
     </>
   )

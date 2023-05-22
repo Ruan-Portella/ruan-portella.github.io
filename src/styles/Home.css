@@ -145,6 +145,7 @@
     width: 100%;
 }
 
+
 @keyframes typing {
 
     from {
@@ -176,7 +177,6 @@
     }
 
 }
-
 
 
 @media only screen and (max-height: 750px) and (max-width: 550px) {
