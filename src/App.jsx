@@ -16,7 +16,7 @@ function App() {
     <div className={`App ${isDark ? '' : 'light'}`} >
         <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
-        <Route exact path='/ruan_portfolio' element={ <Home />}/>
+        <Route exact path='/' element={ <Home />}/>
         <Route exact path="/details/:id" element={<DetailsProject />} />
         </Routes>
         </AnimatePresence>
