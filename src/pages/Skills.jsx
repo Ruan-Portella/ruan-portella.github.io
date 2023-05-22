@@ -14,7 +14,7 @@ export function Skills() {
             <Container>
                 <Row>
                     <Col>
-                        <div className={`skill-content ${isDark ? '' : 'light_secondary'}`}>
+                        <div className={`skill-content ${isDark ? 'dark_secondary' : 'light_secondary'}`}>
                         <motion.div 
                       whileInView={{ opacity: 1, x: 0, rotate: 0 }}
                       initial={{ opacity: 0, x: -200, rotate: 0 }}

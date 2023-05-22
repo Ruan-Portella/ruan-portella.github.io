@@ -46,6 +46,7 @@ export default function NavBar(details) {
           <span className="hamburger-icon"></span>
         </Navbar.Toggle>
         <Navbar.Offcanvas
+                    className={isDark ? 'offcanvas_dark' : 'offcanvas_light'}
                     id={`offcanvasNavbar-expand-lg`}
                     aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
                     placement="end">

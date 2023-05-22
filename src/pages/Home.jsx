@@ -1,5 +1,5 @@
 import NavBar from "../components/NavBar";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import { BsArrowDownCircle } from 'react-icons/bs'
 import { motion } from 'framer-motion';
 import headerImg from '../images/code-typing-animate.svg'
@@ -42,6 +42,7 @@ export default function Home() {
                                 <p>
                                     {isBR ? 'Sou Desenvolvedor Web Full Stack, apaixonado por tecnologia e adoro o que faço. Estou cada vez evoluindo mais e aprendendo para fazer o meu trabalho melhor.' : "I'm a Full Stack Web Developer, passionate about technology and I love what I do. I'm evolving more and more and learning to do my job better. "}
                                    </p>
+                                   <Button className={`currBtn ${isDark ? '' : 'currBtnLight'}`}  variant='dark'><a href="https://youtube.com" target="blank">{isBR ? 'Meu Currículo' : 'My Curriculum'}</a></Button>
                                 </motion.div>
                             </div>
                         </Col>

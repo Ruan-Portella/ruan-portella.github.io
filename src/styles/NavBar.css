@@ -144,12 +144,18 @@ display: flex;
 align-items: center;
 }
 
-.offcanvas {
-background-color: #121212 !important;
+.offcanvas_dark {
+background-color: #121212;
+transition: 0.40s ease-in-out;
+}
+
+.offcanvas_light {
+    background-color: #2F4F4F !important;
+  transition: 0.40s ease-in-out;
 }
 
 .offcanvas.offcanvas-end.show {
-padding-top: 10vh;
+padding-top: 15vh;
 }
 
 .offcanvas.offcanvas-end {

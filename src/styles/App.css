@@ -68,6 +68,11 @@ img {
   transition: 0.40s ease-in-out;
 }
 
+.dark_secondary {
+  background-color: #171717 !important;
+  transition:  0.40s ease-in-out;
+}
+
 .light_secondary {
   background-color: #243F3F !important;
   transition:  0.40s ease-in-out;
