@@ -66,8 +66,9 @@ export default function NavBar(details) {
                         onClick={() => {
                           setTimeout(() => {
                             setActiveLink('home');
+                            setIsToggler(false)
                             window.location.href = '#home'
-                          }, 400);
+                          }, 700);
                           return false;
                         }}
                       >
@@ -78,8 +79,9 @@ export default function NavBar(details) {
                         onClick={() => {
                           setTimeout(() => {
                             setActiveLink('skills');
+                            setIsToggler(false)
                             window.location.href = '#skills';
-                          }, 400);
+                          }, 700);
                           return false;
                         }}
                       >
@@ -90,8 +92,9 @@ export default function NavBar(details) {
                         onClick={() => {
                           setTimeout(() => {
                             setActiveLink('projects');
+                            setIsToggler(false)
                             window.location.href = '#projects';
-                          }, 400);
+                          }, 700);
                           return false;
                         }}
                       >
@@ -102,8 +105,9 @@ export default function NavBar(details) {
                         onClick={() => {
                           setTimeout(() => {
                             setActiveLink('contate-me');
+                            setIsToggler(false)
                             window.location.href = '#contate-me';
-                          }, 500);
+                          }, 700);
                           return false;
                         }}
                       >
@@ -116,9 +120,10 @@ export default function NavBar(details) {
                         <a href="https://www.linkedin.com/in/ruanportella/" className="iconSocial" target='_blank' rel="noreferrer"><FaLinkedinIn className="image" /></a>
                         {
                           isDark ? (
-                            <button className="buttonColor" onClick={() => handleChangeColor(false)} ><CiLight className="image" /></button>
+                            <button className="buttonColor" onClick={() => (handleChangeColor(false), setIsToggler(false))} ><CiLight className="image" /></button>
                           ) : (
-                            <button className="buttonColor" onClick={() => handleChangeColor(true)}><CiDark className="image" /></button>
+                            <button className="buttonColor" onClick={() => (handleChangeColor(true), setIsToggler(false))}
+                            ><CiDark className="image" /></button>
                           )
                         }
                         <DropdownButton id="dropdown-basic-button" title={isBR ? (
@@ -131,11 +136,11 @@ export default function NavBar(details) {
                         <span>EN</span>
                         </>
                         )}>
-                          <Dropdown.Item onClick={ () => handleChangeLanguage(false)}>
+                          <Dropdown.Item onClick={ () => (handleChangeLanguage(false) , setIsToggler(false))}>
                           <US className="image" />
                             <span>English</span>
                             </Dropdown.Item>
-                          <Dropdown.Item onClick={ () => handleChangeLanguage(true)} >
+                          <Dropdown.Item onClick={ () => (handleChangeLanguage(true) , setIsToggler(false))} >
                             <BR className="image" />
                             <span>Português</span>
                             </Dropdown.Item>

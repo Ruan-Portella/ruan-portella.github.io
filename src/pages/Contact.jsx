@@ -71,13 +71,13 @@ export const Contact = () => {
 
 
     return (
+        <motion.div
+        whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+        initial={{ opacity: 0, scale: 0.6, rotate: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: false }}>
         <section className='contact' id='contate-me'>
             <Container>
-                <motion.div
-                    whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-                    initial={{ opacity: 0, scale: 0, rotate: 0 }}
-                    transition={{ duration: 0.7 }}
-                    viewport={{ once: false }}>
                     <Row className='contact-form'>
                         <Col sm={8}>
                             <motion.h2>{isBR ? 'Contate-me' : 'Contact Me'}</motion.h2>
@@ -179,8 +179,8 @@ export const Contact = () => {
                             </Form>
                         </Col>
                     </Row>
-                </motion.div>
             </Container>
         </section>
+        </motion.div>
     )
 }

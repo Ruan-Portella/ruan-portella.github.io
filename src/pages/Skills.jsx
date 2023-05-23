@@ -29,9 +29,9 @@ export function Skills() {
                                     <Nav.Item>
                                         <Nav.Link eventKey="front">Front-End</Nav.Link>
                                     </Nav.Item>
-                                    {/* <Nav.Item>
+                                    <Nav.Item>
                                         <Nav.Link eventKey="back">Back-End</Nav.Link>
-                                    </Nav.Item> */}
+                                    </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link eventKey="test">{isBR ? 'Testes' : 'Tests'}</Nav.Link>
                                     </Nav.Item>
@@ -43,9 +43,9 @@ export function Skills() {
                                     <Tab.Pane eventKey="front">
                                         <SkillsCards {...SkillData[0]}></SkillsCards>
                                     </Tab.Pane>
-                                    {/* <Tab.Pane eventKey="back">
+                                    <Tab.Pane eventKey="back">
                                         <SkillsCards {...SkillData[1]}></SkillsCards>
-                                    </Tab.Pane> */}
+                                    </Tab.Pane>
                                     <Tab.Pane eventKey="test">
                                         <SkillsCards {...SkillData[2]}></SkillsCards>
                                     </Tab.Pane>

@@ -179,7 +179,7 @@
 }
 
 
-@media only screen and (max-height: 852px) and (max-width: 550px) {
+@media only screen and (max-height: 915px) and (max-width: 769px) {
 
     .banner {
         padding-top: 19vh;
@@ -198,7 +198,7 @@
 @media only screen and (min-width: 385px) and (max-width: 540px) {
 
     .banner {
-        padding-top: 8vh;
+        padding-top: 6vh;
     }
 
     .banner h1 {
@@ -230,7 +230,7 @@
     }
 
     .banner {
-        padding-top: 8vh;
+        padding-top: 19vh;
     }
 
 

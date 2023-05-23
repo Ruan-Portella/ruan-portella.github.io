@@ -40,18 +40,18 @@ export function Projects() {
                             <p>{isBR ? 'No decorrer da minha trajetória como dev, desenvolvi as seguintes habilidades:' : "During my career as a dev, I developed the following skills:"}</p>
                             <Tab.Container id='projects-tabs' defaultActiveKey="front-end">
                                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                                    {/* <Nav.Item>
+                                    <Nav.Item>
                                         <Nav.Link eventKey="all">{isBR ? 'Todos' : 'All'}</Nav.Link>
-                                    </Nav.Item> */}
+                                    </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link eventKey="front-end">Front-End</Nav.Link>
                                     </Nav.Item>
-                                    {/* <Nav.Item>
+                                    <Nav.Item>
                                         <Nav.Link eventKey="back-end">Back-End</Nav.Link>
-                                    </Nav.Item> */}
+                                    </Nav.Item>
                                 </Nav>
                                 <Tab.Content>
-                                    {/* <Tab.Pane eventKey='all'>
+                                    <Tab.Pane eventKey='all'>
                                         <Row>
                                             {
                                                 projects.map((project, index) => {
@@ -61,7 +61,7 @@ export function Projects() {
                                                 })
                                             }
                                         </Row>
-                                    </Tab.Pane> */}
+                                    </Tab.Pane>
                                     <Tab.Pane eventKey='front-end'>
                                         <Row>
                                             {
@@ -73,7 +73,7 @@ export function Projects() {
                                             }
                                         </Row>
                                     </Tab.Pane>
-                                    {/* <Tab.Pane eventKey='back-end'>
+                                    <Tab.Pane eventKey='back-end'>
                                         <Row>
                                             {
                                                 projects.filter((project) => project.type === 'BackEnd').map((project, index) => {
@@ -83,7 +83,7 @@ export function Projects() {
                                                 })
                                             }
                                         </Row>
-                                    </Tab.Pane> */}
+                                    </Tab.Pane>
                                 </Tab.Content>
                             </Tab.Container>
                         </Col>
