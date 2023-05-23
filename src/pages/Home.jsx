@@ -16,7 +16,7 @@ export default function Home() {
   const {isBR, isDark} = useContext(PageContext);
 
   return (
-    <>
+    <section>
         <NavBar/>
         <section className={isDark ? 'dark' : 'light'}>
         <section className="banner" id="home">
@@ -69,6 +69,6 @@ export default function Home() {
         <Contact />
         <Footer />
     </section>
-    </>
+    </section>
   )
 }
