@@ -30,7 +30,7 @@ export default function DetailsProject() {
 
     return (
         <section>
-        <NavBar/>
+        <NavBar details />
         <motion.div className='container-project'>
         <motion.section initial='initial' animate='animate' exit='exit' className='projectDetails'>
             <Container>

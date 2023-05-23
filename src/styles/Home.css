@@ -198,7 +198,7 @@
 @media only screen and (min-width: 385px) and (max-width: 540px) {
 
     .banner {
-        padding-top: 10vh;
+        padding-top: 8vh;
     }
 
     .banner h1 {
@@ -228,6 +228,11 @@
         width: 100%;
         border-right: 0;
     }
+
+    .banner {
+        padding-top: 8vh;
+    }
+
 
     .banner {
         gap: 20px;
