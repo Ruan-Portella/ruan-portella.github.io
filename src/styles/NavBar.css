@@ -25,17 +25,23 @@ letter-spacing: -0.2rem;
 text-shadow: 0.1em 0.1em 0.030em #333;
 }
 
+.ms-auto.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-right: 25px;
+}
+    
+
 .navbar .navbar-nav .nav-link.navbar-link {
 font-weight: 500;
 color: white !important;
 letter-spacing: 0.8px;
-padding: 0 25px;
 font-size: 18px;
 opacity: 0.75;
 }
 
-.navbar .navbar-nav a.nav-link.navbar-link:hover,
-.navbar .navbar-nav a.nav-link.navbar-link.active {
+.navbar .navbar-nav a.nav-link.navbar-link:hover {
     opacity: 1;
 }
 
@@ -199,11 +205,6 @@ background-size: 100%;
     border-color: transparent;
 }
 
-.ms-auto.navbar-nav {
-display: flex;
-align-items: center;
-}
-
 .offcanvas_dark {
 background-color: #121212;
 transition: 0.40s ease-in-out;
@@ -232,6 +233,15 @@ justify-content: center;
 align-items: center;
 flex-flow: wrap;
 gap: 16px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .ms-auto.navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        margin-right: 0px;
+    }
 }
   
 @media only screen and (max-width: 380px) {

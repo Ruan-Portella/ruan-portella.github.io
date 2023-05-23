@@ -20,6 +20,13 @@ body {
   background-color: #121212 !important;
 }
 
+.active-scroll-spy {
+  border: 1px solid white;
+  border-radius: 10px 10px 10px 10px;
+  opacity: 1 !important;
+  transition: 0.8s ease-in-out;
+}
+
 body::-webkit-scrollbar {
   width: 0.6rem;
 }

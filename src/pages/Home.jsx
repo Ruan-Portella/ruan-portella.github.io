@@ -6,6 +6,7 @@ import headerImg from '../images/code-typing-animate.svg'
 import PageContext from "../context/PageContext";
 import { useContext } from "react";
 import '../styles/Home.css'
+import ScrollSpy from "react-ui-scrollspy";
 import { Skills } from "./Skills";
 import { Projects } from "./Projects";
 import { Contact } from "./Contact";
@@ -19,7 +20,11 @@ export default function Home() {
     <section>
         <NavBar/>
         <section className={isDark ? 'dark' : 'light'}>
-        <section className="banner" id="home">
+        <ScrollSpy
+         scrollThrottle={100} 
+         useBoxMethod={false}
+        >
+        <section id="home" className="banner">
             <section className="bannerContent">
                 <Container>
                     <Row className="align-items-center">
@@ -68,6 +73,7 @@ export default function Home() {
         <Projects />
         <Contact />
         <Footer />
+        </ScrollSpy>
     </section>
     </section>
   )

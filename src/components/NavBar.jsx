@@ -39,7 +39,7 @@ export default function NavBar(details) {
 
 
   return (
-    <Navbar collapseOnSelect expand="lg" className={`${scrolled ? "scrolled " : ""}${isDark ? 'nav_dark' : 'nav_light'}`}>
+    <Navbar collapseOnSelect expand="lg" className={`${scrolled ? "scrolled " : ""}${isDark ? 'nav_dark' : 'nav_light'}`} >
       <Container>
         <Navbar.Brand href="/">
           <p className="brandLogo">RP</p>
@@ -62,10 +62,11 @@ export default function NavBar(details) {
                     <Nav className="ms-auto">
                       <Nav.Link
                         href="#home"
+                        data-to-scrollspy-id="home"
                         className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'}
                         onClick={() => {
+                          setActiveLink('home');
                           setTimeout(() => {
-                            setActiveLink('home');
                             setIsToggler(false)
                             window.location.href = '#home'
                           }, 700);
@@ -75,10 +76,11 @@ export default function NavBar(details) {
                         {isBR ? 'Inicio' : 'Home'}
                       </Nav.Link>
                       <Nav.Link href="#skills"
+                        data-to-scrollspy-id="skills"
                         className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'}
                         onClick={() => {
+                          setActiveLink('skills');
                           setTimeout(() => {
-                            setActiveLink('skills');
                             setIsToggler(false)
                             window.location.href = '#skills';
                           }, 700);
@@ -88,10 +90,11 @@ export default function NavBar(details) {
                         {isBR ? 'Habilidades' : 'Skills'}
                       </Nav.Link>
                       <Nav.Link href="#projects"
+                      data-to-scrollspy-id="projects"
                         className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'}
                         onClick={() => {
+                          setActiveLink('projects');
                           setTimeout(() => {
-                            setActiveLink('projects');
                             setIsToggler(false)
                             window.location.href = '#projects';
                           }, 700);
@@ -101,10 +104,11 @@ export default function NavBar(details) {
                         {isBR ? 'Projetos' : 'Projects'}
                       </Nav.Link>
                       <Nav.Link href="#contate-me"
+                      data-to-scrollspy-id="contate-me"
                         className={activeLink === 'contate-me' ? 'active navbar-link' : 'navbar-link'}
                         onClick={() => {
+                          setActiveLink('contate-me');
                           setTimeout(() => {
-                            setActiveLink('contate-me');
                             setIsToggler(false)
                             window.location.href = '#contate-me';
                           }, 700);

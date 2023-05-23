@@ -75,8 +75,9 @@ export const Contact = () => {
         whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
         initial={{ opacity: 0, scale: 0.6, rotate: 0 }}
         transition={{ duration: 0.7 }}
-        viewport={{ once: false }}>
-        <section className='contact' id='contate-me'>
+        viewport={{ once: false }}
+        id='contate-me'>
+        <section className='contact'>
             <Container>
                     <Row className='contact-form'>
                         <Col sm={8}>
