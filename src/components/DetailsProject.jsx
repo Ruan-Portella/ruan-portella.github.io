@@ -41,7 +41,7 @@ export default function DetailsProject() {
                                 <Col className='col-project'>
                                     <motion.div className='imgCenter'  initial={{width: '0%', x: '-20%',}} animate={{width: '100%', x: '0%', transition: {delay: 0.1, ...transition}}} >
                                         <motion.h2>{proj.title}</motion.h2>
-                                        <motion.img src={proj.imgUrl}></motion.img>
+                                        <motion.img src={proj.imgUrl} alt={proj.title}></motion.img>
                                     </motion.div>
                                     <motion.div className='project-info' initial={{y: '-600'}} animate={{y: 0, transition: {delay: 0.2, ...transition}}}>
                                     <motion.h3>{isBR ? 'Sobre o Projeto' : 'About The Project'}</motion.h3>

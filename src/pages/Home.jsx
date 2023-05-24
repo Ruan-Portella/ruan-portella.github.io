@@ -47,7 +47,7 @@ export default function Home() {
                                 <p>
                                     {isBR ? 'Sou Desenvolvedor Web Full Stack, apaixonado por tecnologia e adoro o que faço. Estou cada vez evoluindo mais e aprendendo para fazer o meu trabalho melhor.' : "I'm a Full Stack Web Developer, passionate about technology and I love what I do. I'm evolving more and more and learning to do my job better. "}
                                    </p>
-                                   <Button className={`currBtn ${isDark ? '' : 'currBtnLight'}`}  variant='dark'><a href="https://youtube.com" target="blank">{isBR ? 'Meu Currículo' : 'My Curriculum'}</a></Button>
+                                   <Button className={`currBtn ${isDark ? '' : 'currBtnLight'}`}  variant='dark'><a href="https://drive.google.com/file/d/1-zyq2OFFnY2BGw9hzgeF8yD7yY4O1BGC/view?usp=sharing" target="blank">{isBR ? 'Meu Currículo' : 'My Curriculum'}</a></Button>
                                 </motion.div>
                             </div>
                         </Col>

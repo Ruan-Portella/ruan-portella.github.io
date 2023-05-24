@@ -33,7 +33,7 @@ export const ProjectCards = ({ title, imgUrl, stacks, id }) => {
   return (
     <Col sm={6} md={4}>
       <motion.div className='proj-imgbx'>
-        <img src={imgUrl}></img>
+        <img src={imgUrl} alt={title}></img>
         <motion.div transition={transition} className='proj-txtx'>
           <h4>{title}</h4>
           <section className='proj-span'>
