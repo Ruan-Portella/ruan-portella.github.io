@@ -9,7 +9,7 @@ import projImg8 from '../images/project-img9.png'
 import projImg9 from '../images/project-img6.png'
 import projImg10 from '../images/project-img10.png'
 import { FaReact, FaHtml5, FaCss3Alt, FaDocker  } from 'react-icons/fa'
-import {SiJavascript, SiReactrouter, SiRedux} from 'react-icons/si'
+import {SiJavascript, SiReactrouter, SiRedux, SiTestinglibrary} from 'react-icons/si'
 import {DiTrello} from 'react-icons/di'
 
 export const projects = [
@@ -292,8 +292,8 @@ export const projects = [
         type: 'FrontEnd',
         stacks: [ 
             {
-                name: 'Docker',
-                image: <FaDocker />
+                name: 'React Testing Library',
+                image: < SiTestinglibrary />
             },
             ],
         imgUrl: projImg9,
