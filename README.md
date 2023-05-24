@@ -4,7 +4,7 @@
   <summary markdown="span"><strong>🇺🇸 English</strong></summary><br />
 
 <strong>
-This is a personal portfolio project designed to highlight my skills and experiences as [your profession or field of expertise].
+This is a personal portfolio project designed to highlight my skills and experiences.
 
 Using JavaScript, HTML5, CSS3, React-Bootstrap, this project was created to provide a comprehensive overview of my work and professional achievements.
 
