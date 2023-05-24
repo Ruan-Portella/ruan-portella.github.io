@@ -140,11 +140,11 @@ export default function NavBar(details) {
                         <span>EN</span>
                         </>
                         )}>
-                          <Dropdown.Item onClick={ () => (handleChangeLanguage(false) , setIsToggler(false))}>
+                          <Dropdown.Item onClick={ () => (handleChangeLanguage(false) , setIsToggler(false))} className={`${isDark ? 'languageDark' : 'languageLight'}`}>
                           <US className="image" />
                             <span>English</span>
                             </Dropdown.Item>
-                          <Dropdown.Item onClick={ () => (handleChangeLanguage(true) , setIsToggler(false))} >
+                          <Dropdown.Item onClick={ () => (handleChangeLanguage(true) , setIsToggler(false))} className={`${isDark ? 'languageDark' : 'languageLight'}`} >
                             <BR className="image" />
                             <span>Português</span>
                             </Dropdown.Item>

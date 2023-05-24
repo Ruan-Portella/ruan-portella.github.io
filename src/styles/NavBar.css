@@ -140,9 +140,34 @@ opacity: 0.75;
     margin-left: 5px;
 }
 
-.dropdown-item span {
-    color: white;
+.dropdown-item:hover {
+    background-color: transparent;
 }
+
+.dropdown-item span {
+    color: rgb(204, 204, 204);
+}
+
+.languageDark:hover span{
+    color: #ffffff;
+}
+
+.languageDark .image {
+    filter: brightness(1) saturate(100%) invert(0%) sepia(0%) saturate(100%) hue-rotate(346deg) brightness(60%) contrast(100%);
+}
+
+.languageDark:hover  .image {
+    filter: brightness(1) saturate(100%) invert(0%) sepia(0%) saturate(100%) hue-rotate(346deg) brightness(100%) contrast(100%);
+}
+
+.languageLight:hover  .image {
+    filter: brightness(1) saturate(100%) invert(0%) sepia(0%) saturate(100%) hue-rotate(346deg) brightness(60%) contrast(100%);
+}
+
+.languageLight:hover span {
+    color: black;
+}
+
 
 .dropdown-item svg {
     width: 32px;
