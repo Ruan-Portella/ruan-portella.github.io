@@ -83,6 +83,8 @@ export const Contact = () => {
                         <Col sm={8}>
                             <motion.h2>{isBR ? 'Contate-me' : 'Contact Me'}</motion.h2>
                             <Form noValidate validated={validatedForm} onSubmit={handleSubmit} action="https://formsubmit.co/ruanmorales29@gmail.com" method="POST">
+                            <input type="hidden" name="_captcha" value="false"></input>
+                            <input type="hidden" name="_next" value="https://www.ruanportella.dev/feedback"></input>
                                 <Row className="mb-3">
                                     <Form.Group sm="4" controlId="validationCustom10">
                                         <Form.Control
@@ -150,19 +152,6 @@ export const Contact = () => {
                                     </Form.Group>
                                 </Row>
                                 <div className='toastInfo'>
-                                    {
-                                        validatedForm && (
-                                            <ToastContainer className="p-3">
-                                                <Toast bg='success' onClose={() => (setShow(false), setErrorMessage(false))} show={show} >
-                                                    <Toast.Header closeButton closeLabel='string' animation={true}  >
-                                                        <strong className="me-auto">{isBR ? "Contato" : 'Contact'}</strong>
-                                                        <small className="text-muted">{isBR ? "Agora" : 'Just Now'}</small>
-                                                    </Toast.Header>
-                                                    <Toast.Body>{isBR ? "Formulário Enviado" : 'Form Submitted'}</Toast.Body>
-                                                </Toast>
-                                            </ToastContainer>
-                                        )
-                                    }
                                     {
                                         errorMessage && (
                                             <ToastContainer className="p-3">

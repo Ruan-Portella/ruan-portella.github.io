@@ -6,6 +6,7 @@ import { AnimatePresence } from 'framer-motion';
 import DetailsProject from './components/DetailsProject';
 import PageContext from './context/PageContext';
 import { useContext } from 'react';
+import Feedback from './pages/Feedback';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
         <Route exact path='/' element={ <Home />}/>
         <Route exact path="/details/:id" element={<DetailsProject />} />
+        <Route exact path="/feedback" element={<Feedback />} />
         </Routes>
         </AnimatePresence>
     </div>

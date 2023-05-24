@@ -46,7 +46,11 @@ export default function NavBar(details) {
         </Navbar.Brand>
         {
           details.details ? (<Nav className="ms-auto"><Nav.Link className="navbar-link" onClick={() => {
-            window.location.href = '/#projects'
+            if (window.location.pathname.includes('/details')) {
+              window.location.href = '/#projects'
+            } else {
+              window.location.href = '/#home'
+            }
           }}>{isBR ? 'Voltar' : 'Return'}</Nav.Link></Nav>) : (
             <>
               <Navbar.Toggle aria-controls="basic-navbar-nav" className={isToggler ? 'hamburger-x' : ''} onClick={() => isToggler ? setIsToggler(false) : setIsToggler(true)}>

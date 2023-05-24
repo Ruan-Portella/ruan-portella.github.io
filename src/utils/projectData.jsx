@@ -241,8 +241,8 @@ export const projects = [
             },
             ],
         imgUrl: projImg7,
-        link: 'https://ruanportella.dev/Starwars_Plantes_Search',
-        repository: 'https://github.com/Ruan-Portella/Starwars_Plantes_Search',
+        link: 'https://ruanportella.dev/Starwars_Planets_Search',
+        repository: 'https://github.com/Ruan-Portella/Starwars_Planets_Search',
         description: 'Aplicação Desenvolvida em React utilizando Context Api para controlar estado global, o projeto consiste em aplicar filtros nos planetas e ver isso de forma dinâmica.',
         descriptionEn: 'Application Developed in React using Context Api to control global state, the project consists of applying filters on planets and seeing it dynamically.'
     },

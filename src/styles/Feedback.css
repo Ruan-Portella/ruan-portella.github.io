@@ -1,0 +1,16 @@
+.feedback-page {
+    width: 100vw;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+}
+
+.feedback_container .feedback_col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback_container .feedback_col i {
+    margin-bottom: 100px;
+}
