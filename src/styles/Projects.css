@@ -20,6 +20,55 @@
     width: 56%;
 }
 
+.project .buttonProject {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.visibleBtn {
+    font-weight: 700;
+    background-color: #fff;
+    padding: 8px 26px;
+    font-size: 16px;
+    position: relative;
+    border-radius: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.visibleBtn a {
+    text-decoration: none;
+    color: #000 !important;
+    z-index: 1;
+    position: relative;
+}
+
+.visibleBtn:hover a {
+    color: #fff !important;
+}
+
+.visibleBtn::before {
+    content: "";
+    background: #121212;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.visibleBtnLight::before {
+    background: #243F3F !important;
+}
+
+.visibleBtn:hover::before {
+    width: 100%;
+}
+
 .project .nav.nav-pills {
     width: 72%;
     margin: 0 auto;
