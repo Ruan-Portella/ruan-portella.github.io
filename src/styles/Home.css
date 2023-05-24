@@ -179,6 +179,14 @@
 }
 
 
+@media only screen and (max-width: 1024px) and (min-height: 768px) {
+
+    .banner {
+        gap: 0;
+    }
+    
+    }
+
 @media only screen and (max-height: 915px) and (max-width: 769px) {
 
     .banner {
@@ -230,7 +238,7 @@
     }
 
     .banner {
-        padding-top: 19vh;
+        padding-top: 8vh;
     }
 
 

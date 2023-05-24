@@ -83,16 +83,23 @@
 }
 
 
+@media only screen and (max-width: 1024px) and (min-height: 768px) {
+
+    .col-md-4 {
+        width: 50%;
+    }
+    
+    }
+
 @media only screen and (max-width: 430px) {
 
     .project .nav.nav-pills {
         width: auto;
     }
+
+
+    .col-md-4 {
+    width: 100%;
 }
 
-@media only screen and (max-width: 913px) and (min-height: 1024px) {
-
-.col-md-4 {
-    width: 50%;
-}
 }

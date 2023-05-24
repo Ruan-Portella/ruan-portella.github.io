@@ -46,8 +46,10 @@ export default function DetailsProject() {
                                     <motion.div className='project-info' initial={{y: '-600'}} animate={{y: 0, transition: {delay: 0.2, ...transition}}}>
                                     <motion.h3>{isBR ? 'Sobre o Projeto' : 'About The Project'}</motion.h3>
                                         <div className="project-icon">
-                                            <a href={proj.link} target='_blank' rel="noreferrer"><SiGithub className="image" /></a>
-                                            <a href={proj.link}  target='_blank' rel="noreferrer"><FaExternalLinkAlt className="image" /></a>
+                                            {
+                                                proj.link && <a href={proj.link}  target='_blank' rel="noreferrer"><FaExternalLinkAlt className="image" /></a>
+                                            }
+                                            <a href={proj.repository} target='_blank' rel="noreferrer"><SiGithub className="image" /></a>
                                         </div>
                                     </motion.div>
                                     <motion.p className='project-description' initial={{x: '2000'}} animate={{x: 0, transition: {delay: 0.2, ...transition}}}>{isBR ? proj.description : proj.descriptionEn}</motion.p>
