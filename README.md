@@ -4,7 +4,7 @@
   <summary markdown="span"><strong>🇺🇸 English</strong></summary><br />
 
 <strong>
-This is a personal portfolio project designed to highlight my skills and experiences as [your profession or field of expertise].
+This is a personal portfolio project designed to highlight my skills and experiences.
 
 Using JavaScript, HTML5, CSS3, React-Bootstrap, this project was created to provide a comprehensive overview of my work and professional achievements.
 
@@ -26,7 +26,7 @@ I hope that my portfolio will be useful to present my work and experience. Thank
 
 
 <strong>
-Esse é um projeto de portfolio pessoal desenvolvido para destacar minhas habilidades e experiências como [sua profissão ou área de atuação].
+Esse é um projeto de portfolio pessoal desenvolvido para destacar minhas habilidades e experiências.
 
 Utilizando JavaScript, HTML5, CSS3, React-Bootstrap este projeto foi criado para fornecer uma visão abrangente do meu trabalho e conquistas profissionais.
 
