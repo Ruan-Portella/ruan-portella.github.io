@@ -155,10 +155,10 @@ export const Contact = () => {
                                             <ToastContainer className="p-3">
                                                 <Toast bg='success' onClose={() => (setShow(false), setErrorMessage(false))} show={show} >
                                                     <Toast.Header closeButton closeLabel='string' animation={true}  >
-                                                        <strong className="me-auto">Contact</strong>
-                                                        <small className="text-muted">just now</small>
+                                                        <strong className="me-auto">{isBR ? "Contato" : 'Contact'}</strong>
+                                                        <small className="text-muted">{isBR ? "Agora" : 'Just Now'}</small>
                                                     </Toast.Header>
-                                                    <Toast.Body>Formulário Enviado!</Toast.Body>
+                                                    <Toast.Body>{isBR ? "Formulário Enviado" : 'Form Submitted'}</Toast.Body>
                                                 </Toast>
                                             </ToastContainer>
                                         )
@@ -168,10 +168,10 @@ export const Contact = () => {
                                             <ToastContainer className="p-3">
                                                 <Toast bg='danger' onClose={() => (setShow(false), setErrorMessage(false))} show={show} >
                                                     <Toast.Header closeButton closeLabel='string' animation={true}  >
-                                                        <strong className="me-auto">Contact</strong>
-                                                        <small className="text-muted">just now</small>
+                                                        <strong className="me-auto">{isBR ? "Contato" : 'Contact'}</strong>
+                                                        <small className="text-muted">{isBR ? "Agora" : 'Just Now'}</small>
                                                     </Toast.Header>
-                                                    <Toast.Body>Informações Incorretas!</Toast.Body>
+                                                    <Toast.Body>{isBR ? "Informações incorretas!" : 'Incorrect information!'}</Toast.Body>
                                                 </Toast>
                                             </ToastContainer>)
                                     }
