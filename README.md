@@ -26,7 +26,7 @@ I hope that my portfolio will be useful to present my work and experience. Thank
 
 
 <strong>
-Esse é um projeto de portfolio pessoal desenvolvido para destacar minhas habilidades e experiências como [sua profissão ou área de atuação].
+Esse é um projeto de portfolio pessoal desenvolvido para destacar minhas habilidades e experiências.
 
 Utilizando JavaScript, HTML5, CSS3, React-Bootstrap este projeto foi criado para fornecer uma visão abrangente do meu trabalho e conquistas profissionais.
 
