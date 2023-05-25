@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-137a72b2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABIBJREFUWEfFl1tIpVUUx3+OOt5TpGQcFGVQVMor2UM6SiiMmDj4ZObMi6n4IPlQIT6o0Aw4UYEG4v06WPpiKJSkjomXwFLyUojjCOqLjoZXvOA11m6+05njudkF/y/f+c639lr/vfZa/723DdbjFeBd4B0gEvAHPF4M3wIWgUngCfA9sGONaxsrjAKBQiADcLbCXkz2gW+Az4B5c2PMEXACHgAfAvZWBjY0OwYqgBLgwJgPUwQCgG+BN/5hYMNhvwFpwDPDD8YIyPr+ALz2HwXX3KwDd4Bf9f0aEpCZ//Q/BNcn8bZ+JvQJyJr/bC7tbm5uJCQkEB4ejqenJ8fHx6yurjI5OcnIyAiHh4fWJE2W4y2tJvQJfA58bMyDh4cHpaWl5OTk4OLiYjTI5uYmFRUVlJWVcXR0ZInIl1osjYC02u/Gqj0iIoLu7m58fX2V062tLVZWVlQQLy8vvL29XwrW19dHcnIyJycn5khId7wuLaoRqAc+MBwhAWZmZtSsa2traWlpYXp6mvPzc51pTEwMbW1t+Pn56f7Ly8ujpqbGUhYagGwhIAq3YkxkwsLCSElJoaGhgefPn3P9+nWKiooYGBhgeHhYFyAxMRGZuYaenh6VBQsQsfIWAu+9UC1LAxSRrKws8vPzqays1Nnb29u/tO7j4+NER0db9Ae8LwTqJBWWrMXh2NgYNjY23Lt3T6Vdg6urK7u7u7r33t5e7tyRlreIOiHwC/CmJdPOzk7S0kTMULOTWWpISkpC0q6hpKSEBw9ExS1iXAiIQr1qztTHx4fFxUVsbW1Vr0tbSiE6OTlxdnbG6OgooaGhysXGxgYhISGsra1ZjA78IQSkJezMWRcWFvLo0SNlMjg4yMOHD+nq6sLZ2Zn19XXVjoL9/X3u3r1Lf3+/NcHF5sQqAhMTE0RFRSmnkl6pBUn5tWvXdIGGhoZUcUrbXgKKgNklEAFaWlpSxSeIi4tTLRgZGUlHRweBgYHs7e1x8+ZNdnasOoPo81NLYLYIs7OzqauTRkG1mru7u07zq6qqENERZGRk0N7efonJK1NVhLVAjqmRra2t3L9/X31eWFggIEA2zL9QUFBAeXm5+i0aIWT1kZ6eztzcnNqsTKBeCMhR62tTFrOzswQHB6vPT58+JSgoSGeampqqilGwvLyMv7+/TqYzMzOVdOfm5tLY2GjKvRIik1JsZ2fHwcEB8jRGQFpP9gYNsbGxqiUlE9XV1YqMtOSzZxcOQjJEJ8XyYnQzunHjhtr5NBhmwNHRURWeSLFgfn4eyZhkRiCtK3uHCeg2I/ludDuWDpDUapiamkK2Z31I+92+fftCjKamJnV+OD09NRb/wnYsRl8AH+lbOzg4sL29jTzFkVR8fb0k62/Ex8crTRBVFEjLFhcX8/jxY1Mz12J9Ij8sHslkPW/dukVzc7MqQmOQQ4kIlaiiiJaJWWtDTR7JxOBKD6Uawys9lmskrvRiopGQqvpUBO9fXs2+AoovezXTr7Uru5waFrwoppw0EwARA2PXc7l2/Qh8Z+31/E/X0Z6ViAZInwAAAABJRU5ErkJggg==">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAe1JREFUOE+tkz1oWlEUx3+KEQu6iIqbLnaW6qKDmLoUEVxEsggObdJO7aSQURAkU+vQb3RycRAnEcGCdZeudhBdHPxYNFpbxJZz6QsvJtClF97w7jnnd8/X38Dd4wcugMeA9695DHSBj8A3fYhB9/MAeAM8BfT3ev/fwCfgFfBDDJqjBLeByD0Z3Xf1FXgiEA3wATgXT5PJRDabJZlM4nA4mE6nNJtNarUah8NBD5NMzgUgNQ8kG7PZTKvVYr1e0+/32e/3nJ2dEQqFuLq6Ip/PH5fzSABvgRdisVqtuN1uTk5OVBYSYLfbWS6XTCYTvF6tpzec9wIYAg/16Ha7zXw+J5PJ4HQ6mc1mDAYDAoHAcT++C+AnYNYsPp+P4XBIoVDAaDTi9/uJx+Ok02kajcYx4NcdwOXlJcVikdPTUwUJh8PEYjF6vd5901CAWyWIYzAYxGazEY1G6Xa7RCIR1VSXy8V2u+X6+lqDqRLeAc/VUhgMagK73U6N0OPxMB6PKZVKlMtlOp2OGu9oNNIAqok3Y5RXV6uVaqC8Jj1YLBZYLBY2mw3VapVcLqcFy1aqMcqRHX8mAbIH9XqdSqWiDKlUikQioZZJPt2RmIv/tsoCFj28lkz+IabPwMtjMelTk56ILmJHcv4CiGZuyfkPTrKnQ+AARlkAAAAASUVORK5CYII=">
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
     <title>Ruan Portella - Web Developer</title>
     <script type="module" crossorigin src="/assets/index-2f58a87b.js"></script>
     <link rel="stylesheet" href="/assets/index-e645e676.css">
