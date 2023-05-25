@@ -20,6 +20,7 @@ function App() {
         <Route exact path='/' element={ <Home />}/>
         <Route exact path="/feedback" element={<Feedback />} />
         <Route exact path="/details/:id" element={<DetailsProject />} />
+        <Route path="*" element={<Home />} />
         </Routes>
         </AnimatePresence>
     </div>
