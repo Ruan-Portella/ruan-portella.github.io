@@ -18,8 +18,8 @@ function App() {
         <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
         <Route exact path='/' element={ <Home />}/>
-        <Route exact path="/details/:id" element={<DetailsProject />} />
         <Route exact path="/feedback" element={<Feedback />} />
+        <Route exact path="/details/:id" element={<DetailsProject />} />
         </Routes>
         </AnimatePresence>
     </div>
