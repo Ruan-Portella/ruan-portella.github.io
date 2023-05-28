@@ -1,5 +1,5 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaDocker } from 'react-icons/fa'
-import {SiJavascript, SiReactrouter, SiTestinglibrary, SiRedux, SiStyledcomponents, SiJest} from 'react-icons/si'
+import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaDocker, FaFigma } from 'react-icons/fa'
+import {SiJavascript, SiReactrouter, SiTestinglibrary, SiRedux, SiStyledcomponents, SiJest, SiMysql} from 'react-icons/si'
 import {DiTrello} from 'react-icons/di'
 
 export const SkillData = [
@@ -9,35 +9,31 @@ export const SkillData = [
         stacks: [ 
             {
                 name: 'HTML 5',
-                image:  <FaHtml5 size={150} />,
+                image:  <FaHtml5 size={25} />,
             },
             {
                 name: 'CSS 3',
-                image:  <FaCss3Alt size={150} />,
+                image:  <FaCss3Alt size={25} />,
             },
             {
                 name: 'JavaScript',
-                image:  <SiJavascript size={150} />,
+                image:  <SiJavascript size={25} />,
             },
             {
                 name: 'React',
-                image:  <FaReact size={150} />,
-            },
-            {
-                name: 'Context API',
-                image:  <FaReact size={150} />,
+                image:  <FaReact size={25} />,
             },
             {
                 name: 'React Router',
-                image:  <SiReactrouter size={150} />,
+                image:  <SiReactrouter size={25} />,
             },
             {
                 name: 'Redux',
-                image:  <SiRedux size={150} />,
+                image:  <SiRedux size={25} />,
             },
             {
                 name: 'Styled Components',
-                image:  <SiStyledcomponents size={150} />,
+                image:  <SiStyledcomponents size={25} />,
             },
             ],
     },
@@ -47,7 +43,15 @@ export const SkillData = [
         stacks: [ 
             {
                 name: 'Docker',
-                image: <FaDocker size={150}/>
+                image: <FaDocker size={25}/>
+            },
+            {
+                name: 'My SQL',
+                image:  <SiMysql size={25} />,
+            },
+            {
+                name: 'JavaScript',
+                image:  <SiJavascript size={25} />,
             },
             ],
     },
@@ -57,11 +61,11 @@ export const SkillData = [
         stacks: [ 
             {
                 name: 'React Testing Library',
-                image:  <SiTestinglibrary size={150} />,
+                image:  <SiTestinglibrary size={25} />,
             },
             {
                 name: 'Jest',
-                image:  <SiJest size={150} />,
+                image:  <SiJest size={25} />,
             },
             ],
     },
@@ -71,12 +75,16 @@ export const SkillData = [
         stacks: [ 
             {
                 name: 'Git',
-                image: <FaGitAlt size={150}/>
+                image: <FaGitAlt size={25}/>
             },
             {
                 name: 'Trello',
-                image:  <DiTrello size={150} />,
+                image:  <DiTrello size={25} />,
             },
+            {
+                name: 'Figma',
+                image:  <FaFigma size={25} />,
+            }
             ],
     }
 ];
