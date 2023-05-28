@@ -85,19 +85,19 @@ align-items: center;
 }
 
 .row_skills.top .col:nth-child(1) .skills_table.left{
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .row_skills.top .col:nth-child(2) .skills_table.right {
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .row_skills.bottom .col:nth-child(1) .skills_table.left{
-  border-radius: 0px;
+  border-radius: 20px;
 }
 
 .row_skills.bottom .col:nth-child(2) .skills_table.right {
-  border-radius: 0px;
+  border-radius: 20px;
 }
 }
 
