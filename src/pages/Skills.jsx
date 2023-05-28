@@ -1,4 +1,4 @@
-import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
+import { Col, Container, Row} from "react-bootstrap";
 import { SkillsCards } from '../components/SkillsCards';
 import { SkillData } from '../utils/skillData';
 import { motion } from 'framer-motion';
@@ -7,14 +7,14 @@ import PageContext from "../context/PageContext";
 import '../styles/Skill.css'
 
 export function Skills() {
-    const {isBR, isDark} = useContext(PageContext);
+    const {isBR} = useContext(PageContext);
 
     return (
         <section className="skill" id="skills">
             <Container>
                 <Row>
                     <Col>
-                        <div className={`skill-content ${isDark ? 'dark_secondary' : 'light_secondary'}`}>
+                        <div className='skill-content'>
                         <motion.div 
                       whileInView={{ opacity: 1, x: 0, rotate: 0 }}
                       initial={{ opacity: 0, x: -200, rotate: 0 }}
@@ -24,36 +24,44 @@ export function Skills() {
                                 {isBR ? 'Minhas Habilidades' : 'My Skills'}</h2>
                             <p>
                                 {isBR ? 'No decorrer da minha trajetória como dev, desenvolvi as seguintes habilidades:' : "During my career as a dev, I developed the following skills:"}</p>
-                            <Tab.Container id="skills-tabs" defaultActiveKey="front" >
-                                <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="front">Front-End</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="back">Back-End</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="test">{isBR ? 'Testes' : 'Tests'}</Nav.Link>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                        <Nav.Link eventKey="outros">{isBR ? 'Outros' : 'Others'}</Nav.Link>
-                                    </Nav.Item>
-                                </Nav>
-                                <Tab.Content id="slideInUpSkill">
-                                    <Tab.Pane eventKey="front">
-                                        <SkillsCards {...SkillData[0]}></SkillsCards>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="back">
-                                        <SkillsCards {...SkillData[1]}></SkillsCards>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="test">
-                                        <SkillsCards {...SkillData[2]}></SkillsCards>
-                                    </Tab.Pane>
-                                    <Tab.Pane eventKey="outros">
-                                        <SkillsCards {...SkillData[3]}></SkillsCards>
-                                    </Tab.Pane>
-                                </Tab.Content>
-                            </Tab.Container>
+                                <Container className="container_skills">
+                                        <Row className="row_skills top">
+                                        <Col>
+                                            <div className="skills_table left">
+                                            <h2>Front-End</h2>
+                                            <ul className="list_item">
+                                                <SkillsCards {...SkillData[0]}></SkillsCards>
+                                            </ul>
+                                            </div>
+                                        </Col>
+                                        <Col >
+                                        <div className="skills_table right">
+                                            <h2>Back-End</h2>
+                                            <ul className="list_item">
+                                                <SkillsCards {...SkillData[1]}></SkillsCards>
+                                            </ul>
+                                            </div>
+                                        </Col>
+                                        </Row>
+                                        <Row className="row_skills bottom">
+                                        <Col>                                       
+                                         <div className="skills_table  left">
+                                            <h2>{isBR ? 'Testes' : 'Tests'}</h2>
+                                            <ul className="list_item">
+                                                <SkillsCards {...SkillData[2]}></SkillsCards>
+                                            </ul>
+                                            </div>
+                                        </Col>
+                                        <Col>
+                                        <div className="skills_table right">
+                                            <h2>{isBR ? 'Outros' : 'Others'}</h2>
+                                            <ul className="list_item">
+                                                <SkillsCards {...SkillData[3]}></SkillsCards>
+                                            </ul>
+                                            </div>
+                                        </Col>
+                                        </Row>
+                                        </Container>
                             </motion.div>
                         </div>
                     </Col>

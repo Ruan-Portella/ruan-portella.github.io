@@ -1,21 +1,16 @@
-import { Carousel } from 'react-bootstrap'
-import { responsive } from '../utils/responsiveData'
+import { useContext } from 'react';
 import '../styles/SkillCard.css'
+import PageContext from '../context/PageContext';
 
 
 export function SkillsCards(skill) {
+  const { isDark } = useContext(PageContext);
   return (
-    <Carousel responsive={responsive} className='skill-slider' infinite='true' keyboard={true} touch='true'>
-      {skill.stacks.map((stack) => (
-        <Carousel.Item interval={1000} key={stack.name}>
-          <div className='item' key={stack.name}>
+      skill.stacks.map((stack) => (
+          <li className={`item ${isDark ? '' : 'light'}`} key={stack.name}>
             <i>{stack.image}</i>
-            <Carousel.Caption>
               <h5>{stack.name}</h5>
-            </Carousel.Caption>
-          </div>
-        </Carousel.Item>
-      ))}
-    </Carousel>
+          </li>
+      ))
   )
 }
