@@ -19,11 +19,13 @@ export function Skills() {
                       whileInView={{ opacity: 1, x: 0, rotate: 0 }}
                       initial={{ opacity: 0, x: -200, rotate: 0 }}
                       transition={{ duration: 0.7 }}
-                      viewport={{ once: false }}>
+                      viewport={{ once: false }}
+                      className="skill-main"
+                      >
                             <h2>
                                 {isBR ? 'Minhas Habilidades' : 'My Skills'}</h2>
                             <p>
-                                {isBR ? 'No decorrer da minha trajetória como dev, desenvolvi as seguintes habilidades:' : "During my career as a dev, I developed the following skills:"}</p>
+                                {isBR ? 'Durante a minha trajetória como desenvolvedor, pude aprender uma ampla gama de habilidades que me destacam no campo da tecnologia, sendo elas:' : "During my career as a developer, I have been able to develop a wide range of skills that set me apart in the field of technology, including:"}</p>
                                 <Container className="container_skills">
                                         <Row className="row_skills top">
                                         <Col>

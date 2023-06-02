@@ -24,6 +24,14 @@
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
+    width: 60%;
+}
+
+.skill-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container_skills {
@@ -111,6 +119,10 @@ align-items: center;
   .nav-item {
       width: 25%;
   }
+
+  .skill p {
+    width: 100%;
+}
 
 }
 
