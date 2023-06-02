@@ -25,7 +25,7 @@ export function Skills() {
                             <h2>
                                 {isBR ? 'Minhas Habilidades' : 'My Skills'}</h2>
                             <p>
-                                {isBR ? 'Durante a minha trajetória como desenvolvedor, pude aprender uma ampla gama de habilidades que me destacam no campo da tecnologia, sendo elas:' : "During my career as a developer, I have been able to develop a wide range of skills that set me apart in the field of technology, including:"}</p>
+                                {isBR ? 'Durante a minha trajetória como desenvolvedor, pude aprender uma ampla gama de habilidades que me destacam no campo da tecnologia, sendo elas:' : "During my journey as a developer, I have acquired a wide range of skills that distinguish me in the field of technology, including:"}</p>
                                 <Container className="container_skills">
                                         <Row className="row_skills top">
                                         <Col>
