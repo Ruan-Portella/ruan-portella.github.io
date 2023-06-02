@@ -45,7 +45,7 @@ export const ProjectCards = ({ title, imgUrl, stacks, id }) => {
               }
             </ul>
           </section>
-          <motion.button  disabled={isVisible}  ref={ref} className={isDark ? '' : 'light_secondary'} onClick={() => handleClick(id)}>{isBR ? 'Conheça o projeto' : 'Know the project'}</motion.button>
+          <motion.button  disabled={isVisible}  ref={ref} className={isDark ? '' : 'light_secondary'} onClick={() => handleClick(id)}>{isBR ? 'Sobre o Projeto' : 'About the project'}</motion.button>
         </motion.div>
       </motion.div>
     </Col>
