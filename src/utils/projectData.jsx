@@ -8,8 +8,9 @@ import projImg7 from '../images/project-img8.png'
 import projImg8 from '../images/project-img9.png'
 import projImg9 from '../images/project-img6.png'
 import projImg10 from '../images/project-img10.png'
+import projImg11 from '../images/project-img11.png'
 import { FaReact, FaHtml5, FaCss3Alt, FaDocker  } from 'react-icons/fa'
-import {SiJavascript, SiReactrouter, SiRedux, SiTestinglibrary} from 'react-icons/si'
+import {SiJavascript, SiReactrouter, SiRedux, SiTestinglibrary, SiMysql} from 'react-icons/si'
 import {DiTrello} from 'react-icons/di'
 
 export const projects = [
@@ -315,5 +316,20 @@ export const projects = [
         repository: 'https://github.com/Ruan-Portella/Docker_Todo_List',
         description: 'Projeto realizado para testar conhecimentos em docker, criando containers, imagens, removendo, criando volumes, dockerfile, docker-compose, entre outros.',
         descriptionEn: 'Project carried out to test knowledge in docker, creating containers, images, removing, creating volumes, dockerfile, docker-compose, among others.'
+    },
+    {
+        id: 10,
+        title: 'MySQL',
+        type: 'BackEnd',
+        stacks: [ 
+            {
+                name: 'MySQL',
+                image: <SiMysql size={20} />
+            },
+            ],
+        imgUrl: projImg11,
+        repository: 'https://github.com/Ruan-Portella/mysql-all-for-one',
+        description: 'Projeto realizado para testar conhecimentos mysql, criando tabelas, deletando, atualizando, inserindo, utilizando o workbench para realizar as queries.',
+        descriptionEn: 'Project carried out to test mysql knowledge, creating tables, deleting, updating, inserting, using the workbench to perform the queries.'
     },
 ];
