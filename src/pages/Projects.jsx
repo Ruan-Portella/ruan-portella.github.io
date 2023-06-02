@@ -39,7 +39,7 @@ export function Projects() {
                     <Row>
                         <Col>
                             <h2>{isBR ? 'Projetos' : 'Projects'}</h2>
-                            <p>{isBR ? 'No decorrer da minha trajetória como dev, desenvolvi as seguintes habilidades:' : "During my career as a dev, I developed the following skills:"}</p>
+                            <p>{isBR ? 'Ao longo da minha trajetória como desenvolvedor, tive a oportunidade de trabalhar em uma variedade de projetos, que incluem:' : "During my career as a developer, I've had the opportunity to work on a variety of projects, including:"}</p>
                             <Tab.Container id='projects-tabs' defaultActiveKey="all">
                                 <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                     <Nav.Item>
