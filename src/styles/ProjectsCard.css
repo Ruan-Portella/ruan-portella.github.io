@@ -5,6 +5,12 @@
     margin-bottom: 24px;
 }
 
+.icon-click {
+    right: 9px;
+    bottom: 9px;
+    position: absolute;
+}
+
 .proj-imgbx::before {
     content: "";
     background: linear-gradient(90.21deg, #171717 -5.91%, #565657 111.58%);

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
 import {motion} from 'framer-motion'
 
-export const ProjectCards = ({ title, imgUrl, stacks, id }) => {
+export const ProjectCards = ({ title, imgUrl, stacks, id, iconClick }) => {
   const {isBR, isDark} = useContext(PageContext);
   const [isVisible, setIsVisible] = useState(true);
   const { ref, inView } = useInView();
@@ -34,6 +34,7 @@ export const ProjectCards = ({ title, imgUrl, stacks, id }) => {
     <Col sm={6} md={4}>
       <motion.div className='proj-imgbx'>
         <img src={imgUrl} alt={title}></img>
+        <div>{iconClick}</div>
         <motion.div transition={transition} className='proj-txtx'>
           <h4>{title}</h4>
           <section className='proj-span'>
@@ -57,4 +58,5 @@ ProjectCards.propTypes = {
   imgUrl: PropTypes.string.isRequired,
   stacks: PropTypes.arrayOf(PropTypes.shape()),
   id: PropTypes.number.isRequired,
+  iconClick: PropTypes.element.isRequired,
 };

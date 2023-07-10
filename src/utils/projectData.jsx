@@ -1,4 +1,3 @@
-import projImg1 from '../images/project-img4.png'
 import projImg2 from '../images/project-img2.png'
 import projImg3 from '../images/project-img1.png'
 import projImg4 from '../images/project-img5.png'
@@ -12,36 +11,9 @@ import projImg11 from '../images/project-img11.png'
 import { FaReact, FaHtml5, FaCss3Alt, FaDocker  } from 'react-icons/fa'
 import {SiJavascript, SiReactrouter, SiRedux, SiTestinglibrary, SiMysql} from 'react-icons/si'
 import {DiTrello} from 'react-icons/di'
+import { TbHandClick } from 'react-icons/tb'
 
 export const projects = [
-    {
-        id: 0,
-        title: 'Solar System',
-        type: 'FrontEnd',
-        stacks: [ 
-            {
-                name: 'React',
-                image: <FaReact />
-            },
-            {
-                name: 'JavaScript',
-                image:  <SiJavascript />,
-            },
-            {
-                name: 'HTML',
-                image:  <FaHtml5 />,
-            },
-            {
-                name: 'CSS',
-                image:  <FaCss3Alt />,
-            },
-            ],
-        imgUrl: projImg1,
-        link: 'https://ruanportella.dev/Solar_System',
-        repository: 'https://github.com/Ruan-Portella/Solar_System',
-        description: 'Aplicação desenvolvida em React, utilizando uma API para buscar informações de missões, você pode olhar a sua missão espacial favorita e ver informações sobre ela',
-        descriptionEn: 'Application developed in React, using an API to fetch mission information, you can look at your favorite space mission and see information about it'
-    },
     {
         id: 1,
         title: 'Tryunfo',
@@ -65,6 +37,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg2,
+        iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Tryunfo',
         repository: 'https://github.com/Ruan-Portella/Tryunfo',
         description: 'Aplicação desenvolvida em React, controlando os estados e eventos. O projeto consiste em criar as suas próprias cartas, colocando imagem e vendo seus atributos e descrições personalizados.',
@@ -97,6 +70,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg3,
+        iconClick: <TbHandClick color='white' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/TrybeTunes',
         repository: 'https://github.com/Ruan-Portella/TrybeTunes',
         description: 'Aplicação desenvolvida em React e React Router, utilizando como base uma API do iTunes para poder escutar as suas músicas, podendo pesquisar e favoritar.',
@@ -130,6 +104,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg4,
+        iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Online_Store',
         repository: 'https://github.com/Ruan-Portella/Online_Store',
         description: 'Aplicação desenvolvida em React e React Router, utilizando como base uma API do Mercado Livre para poder pesquisar os seus produtos, você pode acessar o produto para ver os detalhes do mesmo, pode adicionar item ao carrinho e também "comprar" o seu produto, além de adicionar itens e excluir.',
@@ -166,6 +141,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg5,
+        iconClick: <TbHandClick color='white' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Trybewallet',
         repository: 'https://github.com/Ruan-Portella/Trybewallet',
         description: 'Aplicação Desenvolvida em React utilizando Redux para controlar estado global, o projeto possibilita o usuário criar suas despesar, podendo alterar e excluir.',
@@ -206,6 +182,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg6,
+        iconClick: <TbHandClick color='white' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Trivia',
         repository: 'https://github.com/Ruan-Portella/Trivia',
         description: 'Aplicação Desenvolvida em React utilizando Redux para controlar estado global, o jogo consiste em responder perguntas de um quiz, podendo ver o resultado final e também o ranking de pontuação.',
@@ -242,6 +219,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg7,
+        iconClick: <TbHandClick color='white' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Starwars_Planets_Search',
         repository: 'https://github.com/Ruan-Portella/Starwars_Planets_Search',
         description: 'Aplicação Desenvolvida em React utilizando Context Api para controlar estado global, o projeto consiste em aplicar filtros nos planetas e ver isso de forma dinâmica.',
@@ -282,6 +260,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg8,
+        iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Recipes_App',
         repository: 'https://github.com/Ruan-Portella/Recipes_App',
         description: 'Aplicação Desenvolvida em React utilizando Context Api para controlar estado global, o projeto consiste procurar receitas e ver os detalhes da mesma, podendo favoritar e ver as receitas favoritas, assim como poder ver as receitas concluídas.',
@@ -298,6 +277,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg9,
+        iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         repository: 'https://github.com/Ruan-Portella/Testing_Library',
         description: 'Projeto realizado para testar conhecimentos em RTL, criando testes unitários e testes de integração, utilizando o jest para realizar os testes.',
         descriptionEn: 'Project carried out to test knowledge in RTL, creating unit tests and integration tests, using jest to perform the tests.'
@@ -313,6 +293,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg10,
+        iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         repository: 'https://github.com/Ruan-Portella/Docker_Todo_List',
         description: 'Projeto realizado para testar conhecimentos em docker, criando containers, imagens, removendo, criando volumes, dockerfile, docker-compose, entre outros.',
         descriptionEn: 'Project carried out to test knowledge in docker, creating containers, images, removing, creating volumes, dockerfile, docker-compose, among others.'
@@ -328,6 +309,7 @@ export const projects = [
             },
             ],
         imgUrl: projImg11,
+        iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         repository: 'https://github.com/Ruan-Portella/mysql-all-for-one',
         description: 'Projeto realizado para testar conhecimentos mysql, criando tabelas, deletando, atualizando, inserindo, utilizando o workbench para realizar as queries.',
         descriptionEn: 'Project carried out to test mysql knowledge, creating tables, deleting, updating, inserting, using the workbench to perform the queries.'

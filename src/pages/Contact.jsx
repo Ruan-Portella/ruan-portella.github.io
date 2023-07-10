@@ -102,7 +102,7 @@ export const Contact = () => {
                                     </Form.Group>
                                 </Row>
                                 <Row className="mb-3">
-                                    <Form.Group sm="4" controlId="validationCustom10">
+                                    <Form.Group sm="4" controlId="validationCustom09">
                                         <Form.Control
                                             className='inputForm'
                                             name='Email'
@@ -118,7 +118,7 @@ export const Contact = () => {
                                     </Form.Group>
                                 </Row>
                                 <Row className="mb-3">
-                                    <Form.Group sm="4" controlId="validationCustom10">
+                                    <Form.Group sm="4" controlId="validationCustom08">
                                         <Form.Control
                                             className='inputForm'
                                             name='Assunto'
@@ -134,7 +134,7 @@ export const Contact = () => {
                                     </Form.Group>
                                 </Row>
                                 <Row className="mb-3">
-                                    <Form.Group sm="4" controlId="validationCustom10">
+                                    <Form.Group sm="4" controlId="validationCustom07">
                                         <Form.Control
                                             className='inputForm'
                                             name='Mensagem'
