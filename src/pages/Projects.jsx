@@ -73,14 +73,14 @@ export function Projects() {
                                     <Tab.Pane eventKey='front-end'>
                                         <Row>
                                             {
-                                                projects.filter((project) => project.type === 'FrontEnd').slice(0, visibleCount).map((project, index) => {
+                                                projects.filter((project) => project.type === 'FrontEnd' || project.type === 'FullStack').slice(0, visibleCount).map((project, index) => {
                                                     return (
                                                         <ProjectCards key={index} {...project}></ProjectCards>
                                                     )
                                                 })
                                             }
                                             {
-                                                projects.filter((project) => project.type === 'FrontEnd').length > visibleCount && (
+                                                projects.filter((project) => project.type === 'FrontEnd' || project.type === 'FullStack').length > visibleCount && (
                                                     <div className='buttonProject'>
                                                         <Button className={`visibleBtn ${isDark ? '' : 'visibleBtnLight'}`}  variant='dark' onClick={() => setVisibleCount(prevCount => prevCount + 6)} ><a>Ver mais</a></Button>
                                                     </div>)
@@ -90,13 +90,13 @@ export function Projects() {
                                     <Tab.Pane eventKey='back-end'>
                                         <Row>
                                             {
-                                                projects.filter((project) => project.type === 'BackEnd').slice(0, visibleCount).map((project, index) => {
+                                                projects.filter((project) => project.type === 'BackEnd' || project.type === 'FullStack').slice(0, visibleCount).map((project, index) => {
                                                     return (
                                                         <ProjectCards key={index} {...project}></ProjectCards>
                                                     )
                                                 })
                                             }                                            {
-                                                projects.filter((project) => project.type === 'BackEnd').length > visibleCount && (
+                                                projects.filter((project) => project.type === 'BackEnd'|| project.type === 'FullStack').length > visibleCount && (
                                                     <div className='buttonProject'>
                                                         <Button className={`visibleBtn ${isDark ? '' : 'visibleBtnLight'}`}  variant='dark' onClick={() => setVisibleCount(prevCount => prevCount + 6)} ><a>Ver mais</a></Button>
                                                     </div>)
