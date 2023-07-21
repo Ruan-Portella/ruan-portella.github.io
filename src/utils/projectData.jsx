@@ -68,6 +68,7 @@ export const projects = [
         ],
         imgUrl: projImg13,
         iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
+        link: 'https://myjobs.ruanportella.dev',
         repository: 'https://github.com/Ruan-Portella/MyJobs',
         description: 'Projeto realizado para testar conhecimentos em NodeJS, Express, MySQL, Sequelize, JWT, React, Next, Docker, Figma, criando rotas, middlewares, controllers, models, entre outros. O projeto consiste em criar uma aplicação para cadastro de suas aplicações em vagas de emprego, podendo criar, editar, deletar e pesquisar',
         descriptionEn: 'Project carried out to test knowledge in NodeJS, Express, MySQL, Sequelize, JWT, React, Next, Docker, Figma, creating routes, middlewares, controllers, models, among others. The project consists of creating an application to register your applications in job vacancies, being able to create, edit, delete and search.'
