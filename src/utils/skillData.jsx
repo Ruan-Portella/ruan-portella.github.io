@@ -1,5 +1,5 @@
-import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaDocker, FaFigma, FaNodeJs } from 'react-icons/fa'
-import {SiJavascript, SiReactrouter, SiTestinglibrary, SiRedux, SiStyledcomponents, SiJest, SiMysql, SiNextdotjs, SiTypescript, SiExpress, SiSequelize, SiJsonwebtokens, SiMocha, SiCircle} from 'react-icons/si'
+import { FaReact, FaGitAlt, FaDocker, FaFigma, FaNodeJs, FaJava } from 'react-icons/fa'
+import {SiJavascript, SiTestinglibrary, SiRedux, SiStyledcomponents, SiJest, SiMysql, SiNextdotjs, SiTypescript, SiExpress, SiSequelize, SiJsonwebtokens, SiMocha, SiCircle, SiTailwindcss, SiAngular, SiMatomo, SiPrisma, SiReactquery, SiReacttable, SiReacthookform} from 'react-icons/si'
 import {DiTrello} from 'react-icons/di'
 
 export const SkillData = [
@@ -7,14 +7,6 @@ export const SkillData = [
         id: 0,
         type: 'FrontEnd',
         stacks: [ 
-            {
-                name: 'HTML 5',
-                image:  <FaHtml5 size={25} />,
-            },
-            {
-                name: 'CSS 3',
-                image:  <FaCss3Alt size={25} />,
-            },
             {
                 name: 'JavaScript',
                 image:  <SiJavascript size={25} />,
@@ -24,8 +16,8 @@ export const SkillData = [
                 image:  <FaReact size={25} />,
             },
             {
-                name: 'React Router',
-                image:  <SiReactrouter size={25} />,
+                name: 'React Native',
+                image:  <FaReact size={25} />,
             },
             {
                 name: 'Redux',
@@ -36,12 +28,24 @@ export const SkillData = [
                 image:  <SiStyledcomponents size={25} />,
             },
             {
+                name: 'Tailwind',
+                image:  <SiTailwindcss size={25} />,
+            },
+            {
+                name: 'Material UI',
+                image:  <SiMatomo size={25} />,
+            },
+            {
                 name: 'Next.js',
                 image:  <SiNextdotjs size={25} />,
             },
             {
                 name: 'TypeScript',
                 image: <SiTypescript size={25} />
+            },
+            {
+                name: 'Angular',
+                image: <SiAngular size={25} />
             }
             ],
     },
@@ -68,6 +72,14 @@ export const SkillData = [
             {
                 name: 'Node.js',
                 image:  <FaNodeJs size={25} />,
+            },
+            {
+                name: 'Java',
+                image: <FaJava size={25} />
+            },
+            {
+                name: 'Prisma',
+                image: <SiPrisma size={25} />
             },
             {
                 name: 'Express',
@@ -125,6 +137,18 @@ export const SkillData = [
                 name: 'Figma',
                 image:  <FaFigma size={25} />,
             },
+            {
+                name: 'React Query',
+                image: <SiReactquery size={25} />
+            },
+            {
+                name: 'React Table',
+                image: <SiReacttable size={25} />
+            },
+            {
+                name: 'React Hook Form',
+                image: <SiReacthookform size={25} />
+            }
             ],
     }
 ];

@@ -1,116 +1,114 @@
 import projImg2 from '../images/project-img2.png'
 import projImg3 from '../images/project-img1.png'
-import projImg4 from '../images/project-img5.png'
 import projImg5 from '../images/project-img3.png'
 import projImg6 from '../images/project-img7.png'
 import projImg7 from '../images/project-img8.png'
-import projImg8 from '../images/project-img9.png'
-import projImg9 from '../images/project-img6.png'
 import projImg10 from '../images/project-img10.png'
 import projImg11 from '../images/project-img11.png'
 import projImg12 from '../images/project-img12.png'
-import projImg13 from '../images/project-img13.png'
-import { FaReact, FaHtml5, FaCss3Alt, FaDocker, FaNodeJs, FaFigma  } from 'react-icons/fa'
-import {SiJavascript, SiReactrouter, SiRedux, SiTestinglibrary, SiMysql, SiSequelize, SiJsonwebtokens, SiNextdotjs, SiExpress, SiTypescript} from 'react-icons/si'
-import {DiTrello} from 'react-icons/di'
+import projImg14 from '../images/project-img14.png'
+import projImg15 from '../images/project-img15.png'
+import { FaReact, FaHtml5, FaCss3Alt, FaDocker, FaNodeJs } from 'react-icons/fa'
+import { SiJavascript, SiReactrouter, SiRedux, SiMysql, SiSequelize, SiJsonwebtokens, SiNextdotjs, SiExpress, SiTypescript, SiPrisma, SiAppwrite, SiReactquery, SiReacttable, SiTailwindcss, SiHono } from 'react-icons/si'
+import { DiTrello } from 'react-icons/di'
 import { TbHandClick } from 'react-icons/tb'
 
 export const projects = [
     {
         id: 0,
-        title: 'Full Stack MyJobs',
+        title: 'Fintra',
         type: 'FullStack',
         stacks: [
-            {
-                name: 'React',
-                image: <FaReact size={20}/>
-            },
             {
                 name: 'Next',
                 image: <SiNextdotjs size={20} />
             },
             {
-                name: 'JavaScript',
-                image: <SiJavascript size={20} />
+                name: 'Tailwind',
+                image: <SiTailwindcss size={20} />
             },
             {
                 name: 'TypeScript',
                 image: <SiTypescript size={20} />
             },
             {
-                name: 'Figma',
-                image: <FaFigma size={20}/>
-            },
-            {
                 name: 'NodeJS',
-                image: <FaNodeJs size={20}/>
+                image: <FaNodeJs size={20} />
             },
             {
-                name: 'Express',
-                image: <SiExpress size={20}/>
+                name: 'Prisma',
+                image: <SiPrisma size={20} />
             },
             {
-                name: 'MySQL',
-                image: <SiMysql size={20} />
+                name: 'Hono',
+                image: <SiHono size={20} />
             },
             {
-                name: 'Sequelize',
-                image: <SiSequelize size={20} />
+                name: 'React Query',
+                image: <SiReactquery size={25} />
             },
             {
-                name: 'JWT',
-                image: <SiJsonwebtokens size={20} />
-            },
-            {
-                name: 'Docker',
-                image: <FaDocker size={20}/>
+                name: 'React Table',
+                image: <SiReacttable size={25} />
             },
         ],
-        imgUrl: projImg13,
+        imgUrl: projImg14,
         iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
-        link: 'https://myjobs.ruanportella.dev',
-        repository: 'https://github.com/Ruan-Portella/MyJobs',
-        description: 'Projeto realizado para testar conhecimentos em NodeJS, Express, MySQL, Sequelize, JWT, React, Next, Docker, Figma, criando rotas, middlewares, controllers, models, entre outros. O projeto consiste em criar uma aplicação para cadastro de suas aplicações em vagas de emprego, podendo criar, editar, deletar e pesquisar',
-        descriptionEn: 'Project carried out to test knowledge in NodeJS, Express, MySQL, Sequelize, JWT, React, Next, Docker, Figma, creating routes, middlewares, controllers, models, among others. The project consists of creating an application to register your applications in job vacancies, being able to create, edit, delete and search.'
+        link: 'https://fintra-rosy.vercel.app/',
+        repository: 'https://github.com/Ruan-Portella/fintra',
+        description: 'O Fintra é uma plataforma moderna de gerenciamento financeiro, desenvolvida para oferecer uma experiência intuitiva e eficiente no controle de receitas, despesas e planejamento financeiro. O sistema combina tecnologias de ponta para garantir performance, segurança e escalabilidade.',
+        descriptionEn: 'Fintra is a modern financial management platform, developed to offer an intuitive and efficient experience in controlling income, expenses and financial planning. The system combines cutting-edge technologies to guarantee performance, security and scalability.'
     },
     {
         id: 1,
-        title: 'Online Store',
-        type: 'FrontEnd',
-        stacks: [ 
+        title: 'TaskUp',
+        type: 'FullStack',
+        stacks: [
             {
-                name: 'React',
-                image: <FaReact />
+                name: 'Next',
+                image: <SiNextdotjs size={20} />
             },
             {
-                name: 'React Router',
-                image: <SiReactrouter />
+                name: 'Tailwind',
+                image: <SiTailwindcss size={20} />
             },
             {
-                name: 'JavaScript',
-                image:  <SiJavascript />,
+                name: 'TypeScript',
+                image: <SiTypescript size={20} />
             },
             {
-                name: 'HTML',
-                image:  <FaHtml5 />,
+                name: 'NodeJS',
+                image: <FaNodeJs size={20} />
             },
             {
-                name: 'CSS',
-                image:  <FaCss3Alt />,
+                name: 'Prisma',
+                image: <SiPrisma size={20} />
             },
-            ],
-        imgUrl: projImg4,
+            {
+                name: 'AppWrite',
+                image: <SiAppwrite size={20} />
+            },
+            {
+                name: 'React Query',
+                image: <SiReactquery size={25} />
+            },
+            {
+                name: 'React Table',
+                image: <SiReacttable size={25} />
+            },
+        ],
+        imgUrl: projImg15,
         iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
-        link: 'https://ruanportella.dev/Online_Store',
-        repository: 'https://github.com/Ruan-Portella/Online_Store',
-        description: 'Aplicação desenvolvida em React e React Router, utilizando como base uma API do Mercado Livre para poder pesquisar os seus produtos, você pode acessar o produto para ver os detalhes do mesmo, pode adicionar item ao carrinho e também "comprar" o seu produto, além de adicionar itens e excluir.',
-        descriptionEn: 'Application developed in React and React Router, using a Mercado Libre API as a basis to be able to search for your products, you can access the product to see its details, you can add an item to the cart and also "buy" your product, in addition to of adding items and deleting.'
+        link: 'https://taskup-five.vercel.app/',
+        repository: 'https://github.com/Ruan-Portella/taskup',
+        description: 'O TaskUp é uma plataforma moderna para gerenciamento de tarefas, projetada para ajudar usuários a organizarem suas atividades de forma eficiente. Com uma interface intuitiva e fluída, a aplicação permite criar, editar, categorizar e acompanhar tarefas com facilidade.',
+        descriptionEn: 'TaskUp is a modern task management platform designed to help users organize their activities efficiently. With an intuitive and fluid interface, the application allows you to create, edit, categorize and track tasks with ease.'
     },
     {
         id: 2,
         title: 'TrybeTunes',
         type: 'FrontEnd',
-        stacks: [ 
+        stacks: [
             {
                 name: 'React',
                 image: <FaReact />
@@ -121,17 +119,17 @@ export const projects = [
             },
             {
                 name: 'JavaScript',
-                image:  <SiJavascript />,
+                image: <SiJavascript />,
             },
             {
                 name: 'HTML',
-                image:  <FaHtml5 />,
+                image: <FaHtml5 />,
             },
             {
                 name: 'CSS',
-                image:  <FaCss3Alt />,
+                image: <FaCss3Alt />,
             },
-            ],
+        ],
         imgUrl: projImg3,
         iconClick: <TbHandClick color='white' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/TrybeTunes',
@@ -144,7 +142,7 @@ export const projects = [
         id: 3,
         title: 'TrybeWallet',
         type: 'FrontEnd',
-        stacks: [ 
+        stacks: [
             {
                 name: 'React',
                 image: <FaReact />
@@ -155,21 +153,21 @@ export const projects = [
             },
             {
                 name: 'Redux',
-                image:  <SiRedux />,
+                image: <SiRedux />,
             },
             {
                 name: 'JavaScript',
-                image:  <SiJavascript />,
+                image: <SiJavascript />,
             },
             {
                 name: 'HTML',
-                image:  <FaHtml5 />,
+                image: <FaHtml5 />,
             },
             {
                 name: 'CSS',
-                image:  <FaCss3Alt />,
+                image: <FaCss3Alt />,
             },
-            ],
+        ],
         imgUrl: projImg5,
         iconClick: <TbHandClick color='white' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Trybewallet',
@@ -181,7 +179,7 @@ export const projects = [
         id: 4,
         title: 'Trivia Game',
         type: 'FrontEnd',
-        stacks: [ 
+        stacks: [
             {
                 name: 'React',
                 image: <FaReact />
@@ -192,25 +190,25 @@ export const projects = [
             },
             {
                 name: 'Redux',
-                image:  <SiRedux />,
+                image: <SiRedux />,
             },
             {
                 name: 'JavaScript',
-                image:  <SiJavascript />,
+                image: <SiJavascript />,
             },
             {
                 name: 'HTML',
-                image:  <FaHtml5 />,
+                image: <FaHtml5 />,
             },
             {
                 name: 'CSS',
-                image:  <FaCss3Alt />,
+                image: <FaCss3Alt />,
             },
             {
                 name: 'Trello',
-                image:  <DiTrello />,
+                image: <DiTrello />,
             },
-            ],
+        ],
         imgUrl: projImg6,
         iconClick: <TbHandClick color='white' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Trivia',
@@ -219,68 +217,27 @@ export const projects = [
         descriptionEn: 'Application Developed in React using Redux to control the global state, the game consists of answering questions in a quiz, being able to see the final result and also the ranking of scores.'
     },
     {
-        id: 5,
-        title: 'Recipes App',
-        type: 'FrontEnd',
-        stacks: [ 
-            {
-                name: 'React',
-                image: <FaReact />
-            },
-            {
-                name: 'React Router',
-                image: <SiReactrouter />
-            },
-            {
-                name: 'Context Api',
-                image:  <FaReact />,
-            },
-            {
-                name: 'JavaScript',
-                image:  <SiJavascript />,
-            },
-            {
-                name: 'HTML',
-                image:  <FaHtml5 />,
-            },
-            {
-                name: 'CSS',
-                image:  <FaCss3Alt />,
-            },
-            {
-                name: 'Trello',
-                image:  <DiTrello />,
-            },
-            ],
-        imgUrl: projImg8,
-        iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
-        link: 'https://ruanportella.dev/Recipes_App',
-        repository: 'https://github.com/Ruan-Portella/Recipes_App',
-        description: 'Aplicação Desenvolvida em React utilizando Context Api para controlar estado global, o projeto consiste procurar receitas e ver os detalhes da mesma, podendo favoritar e ver as receitas favoritas, assim como poder ver as receitas concluídas.',
-        descriptionEn: 'Application Developed in React using Context Api to control global state, the project consists of searching for recipes and seeing their details, being able to bookmark and see favorite recipes, as well as being able to see completed recipes.'
-    },
-    {
         id: 6,
         title: 'Tryunfo',
         type: 'FrontEnd',
-        stacks: [ 
+        stacks: [
             {
                 name: 'React',
                 image: <FaReact />
             },
             {
                 name: 'JavaScript',
-                image:  <SiJavascript />,
+                image: <SiJavascript />,
             },
             {
                 name: 'HTML',
-                image:  <FaHtml5 />,
+                image: <FaHtml5 />,
             },
             {
                 name: 'CSS',
-                image:  <FaCss3Alt />,
+                image: <FaCss3Alt />,
             },
-            ],
+        ],
         imgUrl: projImg2,
         iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Tryunfo',
@@ -292,7 +249,7 @@ export const projects = [
         id: 7,
         title: 'StarWars Planets Search',
         type: 'FrontEnd',
-        stacks: [ 
+        stacks: [
             {
                 name: 'React',
                 image: <FaReact />
@@ -303,21 +260,21 @@ export const projects = [
             },
             {
                 name: 'Context Api',
-                image:  <FaReact />,
+                image: <FaReact />,
             },
             {
                 name: 'JavaScript',
-                image:  <SiJavascript />,
+                image: <SiJavascript />,
             },
             {
                 name: 'HTML',
-                image:  <FaHtml5 />,
+                image: <FaHtml5 />,
             },
             {
                 name: 'CSS',
-                image:  <FaCss3Alt />,
+                image: <FaCss3Alt />,
             },
-            ],
+        ],
         imgUrl: projImg7,
         iconClick: <TbHandClick color='white' size={27} className='icon-click' />,
         link: 'https://ruanportella.dev/Starwars_Planets_Search',
@@ -326,31 +283,15 @@ export const projects = [
         descriptionEn: 'Application Developed in React using Context Api to control global state, the project consists of applying filters on planets and seeing it dynamically.'
     },
     {
-        id: 8,
-        title: 'React Testing Library',
-        type: 'FrontEnd',
-        stacks: [ 
-            {
-                name: 'React Testing Library',
-                image: < SiTestinglibrary />
-            },
-            ],
-        imgUrl: projImg9,
-        iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
-        repository: 'https://github.com/Ruan-Portella/Testing_Library',
-        description: 'Projeto realizado para testar conhecimentos em RTL, criando testes unitários e testes de integração, utilizando o jest para realizar os testes.',
-        descriptionEn: 'Project carried out to test knowledge in RTL, creating unit tests and integration tests, using jest to perform the tests.'
-    },
-    {
         id: 9,
         title: 'Docker Todo-List',
         type: 'BackEnd',
-        stacks: [ 
+        stacks: [
             {
                 name: 'Docker',
                 image: <FaDocker />
             },
-            ],
+        ],
         imgUrl: projImg10,
         iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         repository: 'https://github.com/Ruan-Portella/Docker_Todo_List',
@@ -361,12 +302,12 @@ export const projects = [
         id: 10,
         title: 'MySQL',
         type: 'BackEnd',
-        stacks: [ 
+        stacks: [
             {
                 name: 'MySQL',
                 image: <SiMysql size={20} />
             },
-            ],
+        ],
         imgUrl: projImg11,
         iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         repository: 'https://github.com/Ruan-Portella/mysql-all-for-one',
@@ -380,11 +321,11 @@ export const projects = [
         stacks: [
             {
                 name: 'NodeJS',
-                image: <FaNodeJs size={20}/>
+                image: <FaNodeJs size={20} />
             },
             {
                 name: 'Express',
-                image: <SiExpress size={20}/>
+                image: <SiExpress size={20} />
             },
             {
                 name: 'MySQL',
@@ -397,8 +338,8 @@ export const projects = [
             {
                 name: 'JWT',
                 image: <SiJsonwebtokens size={20} />
-            }, 
-    ],
+            },
+        ],
         imgUrl: projImg12,
         iconClick: <TbHandClick color='black' size={27} className='icon-click' />,
         repository: 'https://github.com/Ruan-Portella/blogs_api',
